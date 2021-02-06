@@ -1,0 +1,1198 @@
+@media print, (max-width: 767px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_title: 25px;
+    }
+
+
+    html.custom_scroll ::-webkit-scrollbar
+    {
+        width: 5px;
+        height: 5px;
+    }
+
+
+    .block
+    {
+        margin-bottom: 60px;
+    }
+
+
+    .buttonUp
+    {
+        display: none !important;
+    }
+
+
+
+    /*----------------
+        Pagination
+    ----------------*/
+    .pagination
+    {
+        font-size: 15px;
+        line-height: 41px;
+    }
+
+    .pagination a,
+    .pagination .sep
+    {
+        width: 41px;
+        height: 41px;
+    }
+
+
+    .pagination.small
+    {
+        font-size: 14px;
+        line-height: 32px;
+
+        margin-top: 25px;
+    }
+
+    .pagination.small a,
+    .pagination.small .sep
+    {
+        width: 32px;
+        height: 32px;
+    }
+
+    .pagination.small .prev
+    {
+        margin-right: 10px;
+    }
+
+    .pagination.small .next
+    {
+        margin-left: 10px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    .mob_header
+    {
+        display: block;
+    }
+
+
+    header
+    {
+        position: fixed;
+        z-index: 101;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        margin: 0;
+        padding: 0;
+
+        transition: transform .3s linear;
+        transform: translateX(-100%);
+
+        background: #17162f;
+    }
+
+    header.show
+    {
+        transform: translateX(0);
+    }
+
+    header .cont
+    {
+        padding: 0;
+    }
+
+
+    header .mob_scroll
+    {
+        display: flex;
+        overflow: auto;
+
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        padding: 0 0 20px;
+
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    header .mob_scroll > *
+    {
+        width: 100%;
+    }
+
+
+    header .logo
+    {
+        display: none;
+    }
+
+
+    header .account
+    {
+        width: 100%;
+        height: 64px;
+        padding: 10px 20px;
+    }
+
+    header .account .profile .icon,
+    header .account:hover .dropdown
+    {
+        display: none;
+    }
+
+
+    header .city
+    {
+        width: 100%;
+        margin-left: 0;
+        padding: 0 20px;
+
+        order: 3;
+    }
+
+    header .city .btn
+    {
+        width: 100%;
+        padding: 20px;
+
+        text-align: center;
+
+        justify-content: center;
+    }
+
+    header .city .mini_modal
+    {
+        position: relative;
+        top: 0;
+        left: 0;
+
+        margin-top: 15px;
+    }
+
+
+    header .balance
+    {
+        width: 100%;
+        margin-left: 0;
+        padding: 15px 20px;
+
+        text-align: center;
+
+        background: rgba(0,0,0,.18);
+
+        justify-content: center;
+        order: 2;
+    }
+
+
+    header .support
+    {
+        display: none;
+    }
+
+
+    header .support + .account
+    {
+        margin-left: 0;
+    }
+
+
+    header .mob_menu
+    {
+        display: block;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+    aside .links .items
+    {
+        column-gap: 25px;
+        column-count: 3;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        margin-bottom: 25px;
+    }
+
+
+    .page_head .add_ad_btn
+    {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+
+    .page_head .add_ad_btn ~ .search
+    {
+        width: 100%;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head .title
+    {
+        line-height: calc(var(--font_size_title) + 2px);
+    }
+
+
+    .block_head .back
+    {
+        width: 100%;
+        margin-top: 8px;
+    }
+
+
+    .block_head .clear_btn
+    {
+        top: 4px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .columns > *,
+    .form .columns > *.width1of3,
+    .form .columns > *.width2of3,
+    .form .columns > *.width1of5,
+    .form .columns > *.width2of5,
+    .form .columns > *.width3of5
+    {
+        width: calc(100% - var(--form_columns_offset));
+    }
+
+
+    .form .drop_files .selected > *
+    {
+        width: calc(25% - 20px);
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        line-height: 24px;
+    }
+
+    .text_block h1
+    {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+
+
+    /*----------------
+        Error page
+    ----------------*/
+    .error_page .data
+    {
+        padding: 40px;
+
+        border-radius: 22px;
+    }
+
+    .error_page .code img
+    {
+        width: 220px;
+    }
+
+    .error_page .title
+    {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .error_page .desc
+    {
+        font-size: 15px;
+
+        width: 420px;
+    }
+
+
+
+    /*----------
+        Auth
+    ----------*/
+    .auth .block_title
+    {
+        font-size: 25px;
+        line-height: 29px;
+    }
+
+
+    .auth .head
+    {
+        margin-bottom: 25px;
+    }
+
+    .auth .head .steps
+    {
+        font-size: 25px;
+        line-height: 29px;
+    }
+
+
+    .auth .data.register
+    {
+        padding: 25px;
+    }
+
+    .auth .data.register .logo
+    {
+        margin-bottom: 20px;
+        padding-top: 6px;
+        padding-right: 35px;
+    }
+
+    .auth .data.register .logo img
+    {
+        width: 32px;
+    }
+
+    .auth .data.register .logo .name
+    {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .auth .data.register .logo .desc
+    {
+        font-size: 13px;
+        line-height: 17px;
+
+        letter-spacing: 1px;
+    }
+
+
+    .auth .data.register .welcome .title
+    {
+        font-size: 23px;
+        line-height: 27px;
+    }
+
+    .auth .data.register .welcome .desc
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .auth .data.register .welcome .next_step_btn
+    {
+        margin-top: 20px;
+    }
+
+
+    .auth .data.register .phone_number .input
+    {
+        padding-right: 17px;
+    }
+
+    .auth .data.register .phone_number .submit_btn
+    {
+        position: relative;
+        right: 0;
+
+        width: 100%;
+        margin-top: 15px;
+    }
+
+
+    .auth .data.register .phone_code .number
+    {
+        font-size: 15px;
+
+        margin-bottom: 20px;
+    }
+
+
+    .auth .data.register .finish .start_link
+    {
+        padding: 7px 22px;
+
+        letter-spacing: 2px;
+    }
+
+
+
+    /*---------------
+        Text page
+    ---------------*/
+    .text_page .text_block
+    {
+        padding: 25px;
+
+        border-radius: 22px;
+    }
+
+
+
+    /*-------------------
+        Contacts page
+    -------------------*/
+    .contacts_page .data
+    {
+        padding: 25px;
+
+        border-radius: 22px;
+    }
+
+
+    .contacts_page .info
+    {
+        margin-bottom: -10px;
+    }
+
+    .contacts_page .info > *
+    {
+        font-size: 18px;
+        line-height: 22px;
+
+        max-width: calc(100% - 20px);
+        margin-bottom: 10px;
+    }
+
+
+
+    /*-------------
+        LK info
+    -------------*/
+    .lk_info .data
+    {
+        padding: 25px;
+
+        border-radius: 22px;
+    }
+
+
+
+    /*---------------
+        LK stocks
+    ---------------*/
+    .lk_info .stocks .block_head
+    {
+        margin-bottom: 25px !important;
+    }
+
+
+    .lk_info .stocks .row > *
+    {
+        width: calc(50% - 18px);
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services .service
+    {
+        padding: 20px;
+    }
+
+    .services .service .icon
+    {
+        margin: 0 auto 20px;
+        padding: 15px;
+    }
+
+    .services .service .info
+    {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .services .service .link
+    {
+        margin: 20px auto 0;
+    }
+
+
+
+    /*----------------
+        LK history
+    ----------------*/
+    .lk_info .history .block_head
+    {
+        margin-bottom: 20px !important;
+    }
+
+
+    .lk_info .history .items
+    {
+        font-size: 15px;
+        line-height: 19px;
+    }
+
+
+    .lk_info .history .items > * + *
+    {
+        margin-top: 12px;
+    }
+
+
+
+    /*-------------
+        Profile
+    -------------*/
+    .profile .row > *
+    {
+        width: calc(100% - 20px);
+    }
+
+
+    .profile .item,
+    .profile .item.big
+    {
+        min-height: 89px;
+        padding: 20px;
+    }
+
+    .profile .item.big > .icon,
+    .profile .item.promotion > .icon,
+    .profile .item.hide > .icon
+    {
+        margin: 0 auto 15px;
+        padding: 10px;
+    }
+
+    .profile .item.big .info,
+    .profile .item.promotion .info,
+    .profile .item.hide .info
+    {
+        width: 100%;
+        max-width: 100%;
+
+        text-align: center;
+    }
+
+    .profile .item.big .link
+    {
+        margin: 20px auto 0;
+    }
+
+    .profile .item .rating
+    {
+        width: 100%;
+        margin: 12px 0 0;
+
+        justify-content: center;
+    }
+
+
+
+    .see_profile
+    {
+        margin-top: 25px;
+        padding: 0;
+    }
+
+    .see_profile .btn > *
+    {
+        padding: 10px 25px;
+    }
+
+
+
+    /*--------------
+        Learning
+    --------------*/
+    .learning .row > *
+    {
+        width: calc(50% - 20px);
+    }
+
+
+    .learning .item
+    {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .learning .item .thumb .icon
+    {
+        width: 36px;
+        height: 36px;
+    }
+
+
+
+    /*-------------------
+        Personal info
+    -------------------*/
+    .personal_info .form .title
+    {
+        font-size: 20px;
+        line-height: 24px;
+
+        margin-bottom: 20px;
+    }
+
+    .personal_info .form .photo .exp
+    {
+        line-height: 20px;
+
+        width: calc(100% - 119px);
+    }
+
+
+
+    /*----------
+        Chat
+    ----------*/
+    .chat .messages
+    {
+        padding: 10px;
+
+        border-radius: 0;
+    }
+
+    .chat .messages .message .text
+    {
+        line-height: 18px;
+
+        padding: 14px;
+
+        border-radius: 12px;
+    }
+
+
+
+    /*----------------
+        LK balance
+    ----------------*/
+    .lk_info .balance .info .val
+    {
+        margin-bottom: 20px;
+    }
+
+    .lk_info .balance .info .val b
+    {
+        font-size: 25px;
+        line-height: 29px;
+    }
+
+
+    .lk_info .balance .info .form .title
+    {
+        font-size: 15px;
+
+        margin-bottom: 5px;
+    }
+
+
+    .lk_info .balance .info .logos
+    {
+        width: calc(100% + 20px);
+        max-width: calc(100% + 20px);
+        margin-top: 25px;
+        margin-bottom: -20px;
+        margin-left: -20px;
+
+        justify-content: flex-start;
+    }
+
+    .lk_info .balance .info .logos > *
+    {
+        max-width: calc(33.333% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+
+
+    .lk_info .balance .gifts .item
+    {
+        min-height: 89px;
+        padding: 20px;
+    }
+
+    .lk_info .balance .gifts .item .icon
+    {
+        margin: 0 auto 15px;
+    }
+
+    .lk_info .balance .gifts .item .info
+    {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .lk_info .balance .gifts .item .link,
+    .lk_info .balance .gifts .item .timer
+    {
+        width: 200px;
+        margin: 18px auto 0;
+        padding: 12px 20px;
+    }
+
+
+
+    /*------------
+        LK ads
+    ------------*/
+    .lk_info .ads .block_head .title
+    {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .lk_info .ads .count
+    {
+        font-size: 16px;
+        line-height: 20px;
+
+        margin-left: 0;
+    }
+
+
+    .lk_info .ads .tabs
+    {
+        margin: 0 0 20px;
+    }
+
+    .lk_info .ads .tabs button
+    {
+        font-size: 14px;
+        line-height: 18px;
+
+        width: 50%;
+        margin: 0;
+        padding: 6px 15px;
+    }
+
+
+    .lk_info .ads .service
+    {
+        padding: 20px;
+    }
+
+    .lk_info .ads .service .col_right
+    {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .lk_info .ads .service .name
+    {
+        font-size: 17px;
+        line-height: 21px;
+
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .lk_info .ads .service .price
+    {
+        font-size: 15px;
+        line-height: 21px;
+
+        width: 100%;
+        max-width: 100%;
+        margin-top: 8px;
+
+        text-align: left;
+    }
+
+
+    .lk_info .ads .service .category,
+    .lk_info .ads .service .links,
+    .lk_info .ads .service .city,
+    .lk_info .ads .service .rating
+    {
+        margin-top: 10px;
+    }
+
+
+
+    /*-----------------
+        LK Add/Edit
+    -----------------*/
+    .lk_info .add_edit .form .bottom .exp
+    {
+        line-height: 18px;
+
+        width: 100%;
+        margin-top: 12px;
+    }
+
+
+
+    /*--------------------------
+        LK for organizations
+    --------------------------*/
+    .lk_info .for_organizations .form .block_head
+    {
+        margin-bottom: 20px !important;
+    }
+
+
+    .lk_info .for_organizations .form .work_scheme .days .field.row
+    {
+        min-height: 0;
+        margin-bottom: -10px;
+    }
+
+    .lk_info .for_organizations .form .work_scheme .days .field.row > *
+    {
+        width: calc(25% - 20px);
+        margin-bottom: 10px;
+    }
+
+
+
+    /*------------------
+        Ads category
+    ------------------*/
+    .ads_category.empty
+    {
+        padding: 20px;
+    }
+
+
+    .ads_category .map_btn
+    {
+        height: 180px;
+    }
+
+
+    .ads_category .row
+    {
+        --ads_count: 2;
+    }
+
+    .ads_category .row > *
+    {
+        width: calc(50% - 20px);
+    }
+
+
+    .ads_category .add_ad_link
+    {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+
+
+    /*--------------------
+        Author profile
+    --------------------*/
+    .author_profile
+    {
+        padding: 20px;
+
+        text-align: center;
+    }
+
+    .author_profile .sticker
+    {
+        top: 20px;
+        right: 20px;
+    }
+
+    .author_profile > .thumb
+    {
+        margin: 0 auto 15px;
+    }
+
+    .author_profile > .thumb + .info
+    {
+        width: 100%;
+    }
+
+    .author_profile .info
+    {
+        padding-right: 0;
+    }
+
+    .author_profile .online
+    {
+        display: inline-block;
+
+        vertical-align: top;
+    }
+
+
+    .author_profile .other_services .row
+    {
+        margin-bottom: -10px;
+        margin-left: -10px;
+    }
+
+    .author_profile .other_services .row > *
+    {
+        width: calc(50% - 10px);
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+
+
+    .author_profile .gallery
+    {
+        width: calc(100% + 40px);
+        margin: 20px -20px 0;
+        padding: 0 20px;
+    }
+
+
+    .author_profile .messengers .btn span,
+    .author_profile .site a span
+    {
+        padding: 12px 24px;
+    }
+
+
+    .author_profile .messengers ~ .share,
+    .author_profile .site ~ .share
+    {
+        width: 100%;
+        margin-top: 15px;
+
+        text-align: center;
+
+        justify-content: center;
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews
+    {
+        padding: 20px;
+    }
+
+
+    .reviews .review .author .photo + *
+    {
+        width: calc(100% - 54px);
+    }
+
+    .reviews .review .date
+    {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+
+
+    /*-----------
+        Share
+    -----------*/
+    .share .socials
+    {
+        display: block;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding: 40px 0;
+    }
+
+
+    footer .copyright
+    {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+
+    footer .links a
+    {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .fancybox-slide--html
+    {
+        padding: 20px;
+    }
+
+
+
+    .noti_modal .icon
+    {
+        width: 62px;
+        height: 62px;
+        margin: 0 auto 15px;
+    }
+
+    .noti_modal .desc
+    {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .noti_modal .links
+    {
+        margin-top: 20px;
+    }
+
+    .noti_modal .links button
+    {
+        height: 48px;
+        padding: 10px 30px;
+
+        letter-spacing: 2px;
+    }
+
+
+
+    #catalog_modal
+    {
+        padding: 25px;
+    }
+
+    #catalog_modal .category .links
+    {
+        margin-left: -25px;
+    }
+
+    #catalog_modal .category .links > *
+    {
+        width: calc(50% - 25px);
+        margin-left: 25px;
+    }
+
+
+
+    #ad_phone_modal .author
+    {
+        width: 100%;
+    }
+
+    #ad_phone_modal .report_btn
+    {
+        margin-top: 20px;
+    }
+
+
+
+    .modal .related_ads .row > *
+    {
+        width: calc(100% - 19px);
+    }
+
+
+
+    #ad_info_modal
+    {
+        padding: 25px;
+    }
+
+    #ad_info_modal .head .title
+    {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    #ad_info_modal .head .price
+    {
+        width: 100%;
+    }
+
+    #ad_info_modal .head .price + *
+    {
+        margin-left: 0;
+    }
+
+    #ad_info_modal .head .location,
+    #ad_info_modal .head .date,
+    #ad_info_modal .head .views
+    {
+        margin-top: 4px;
+    }
+
+
+    #ad_info_modal .gallery .slide
+    {
+        width: 120px;
+    }
+
+
+    #ad_info_modal .author
+    {
+        width: 100%;
+    }
+
+
+    #ad_info_modal .phone_btn
+    {
+        margin-top: 15px;
+        margin-left: 0;
+    }
+
+    #ad_info_modal .profile_link
+    {
+        margin-top: 15px;
+    }
+
+
+
+    .ad_up_modal .title
+    {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+
+
+    .modal .related_ads .list .ad .location
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .modal .related_ads .list .ad .author
+    {
+        width: 100%;
+        margin-top: 16px;
+    }
+}

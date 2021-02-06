@@ -1,0 +1,131 @@
+.swiper-button-next,
+.swiper-button-prev
+{
+    top: 0;
+    bottom: 0;
+
+    display: flex;
+
+    width: 43px;
+    height: 43px;
+    margin: auto;
+
+    border-radius: 50%;
+    background: linear-gradient(198.85deg, #fad961 -34.64%, #f76b1c 87.28%);
+    box-shadow: 0 17px 31px rgba(231, 95, 39, .408882);
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.swiper-button-prev
+{
+    left: -22px;
+}
+
+.swiper-button-next
+{
+    right: -22px;
+}
+
+.swiper-button-next .icon,
+.swiper-button-prev .icon
+{
+    display: block;
+
+    width: 19px;
+    height: 15px;
+
+    fill: #fff;
+}
+
+.swiper-button-prev .icon
+{
+    transform: rotate(180deg);
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after
+{
+    display: none;
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled
+{
+    opacity: 0;
+}
+
+
+
+.swiper-container-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+
+    width: 100%;
+    height: 8px;
+
+    pointer-events: none;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: тщwrap;
+}
+
+.swiper-pagination-bullet
+{
+    position: relative;
+
+    display: block;
+
+    width: 100%;
+    height: 8px;
+
+    cursor: pointer;
+    transition: .2s linear;
+    pointer-events: auto;
+
+    opacity: .65;
+    border-radius: 0;
+    background: #fff;
+}
+
+.swiper-pagination-bullet:before
+{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 300px;
+
+    content: '';
+}
+
+.swiper-pagination-bullet + .swiper-pagination-bullet
+{
+    margin-left: 2px !important;
+}
+
+.swiper-pagination-bullet:hover,
+.swiper-pagination-bullet.active
+{
+    opacity: 1;
+    background: linear-gradient(180deg, #ff954d 0%, #fb6600 100%);
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet
+{
+    margin: 0;
+}

@@ -1,0 +1,427 @@
+@media print, (max-width: 1159px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --sidebar_width: 220px;
+    }
+
+
+    .buttonUp
+    {
+        right: 20px;
+        bottom: 157px;
+
+        margin-right: 0;
+    }
+
+
+    .content_flex .content
+    {
+        width: calc(100% - var(--sidebar_width) - 25px);
+    }
+
+
+
+    /*----------------
+        Pagination
+    ----------------*/
+    .pagination.small
+    {
+        margin-top: 30px;
+    }
+
+
+
+    /*-------------------
+        Notifications
+    -------------------*/
+    .notifications
+    {
+        top: 20px;
+        right: 20px;
+
+        width: 320px;
+    }
+
+    .notifications > * + *
+    {
+        margin-top: 10px;
+    }
+
+    .notifications .notification
+    {
+        padding: 20px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+    aside .block_head
+    {
+        margin-bottom: 20px;
+    }
+
+
+    aside .categories .cat .main
+    {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+
+    aside .categories .sub_cats
+    {
+        padding-top: 10px;
+    }
+
+    aside .categories .sub_cats > * + *
+    {
+        margin-top: 10px;
+    }
+
+    aside .categories .sub_cats > * > a
+    {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+
+
+    aside .related_ads .ad .sticker
+    {
+        top: 6px;
+        right: 6px;
+    }
+
+
+
+    aside .documents .list > * + *
+    {
+        margin-top: 15px;
+    }
+
+    aside .documents .list a
+    {
+        font-size: 15px;
+    }
+
+
+
+    aside .your_page
+    {
+        padding: 22px;
+    }
+
+    aside .your_page .desc
+    {
+        line-height: 19px;
+
+        margin-top: 10px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head .title.mini
+    {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+
+
+
+    /*----------
+        Auth
+    ----------*/
+    .auth .data.recovery .block_title
+    {
+        font-size: 36px;
+        line-height: 42px;
+
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+
+
+    /*-------------
+        LK info
+    -------------*/
+    .lk_info .data
+    {
+        padding: 30px;
+
+        border-radius: 28px;
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services .service .link
+    {
+        letter-spacing: 1.2px;
+    }
+
+    .services .service .info .name div
+    {
+        display: block;
+    }
+
+    .services .service .info .duration
+    {
+        margin-top: 6px;
+        margin-left: 0;
+    }
+
+    .services .service .info .desc
+    {
+        line-height: 18px;
+
+        margin-top: 8px;
+    }
+
+
+
+    /*---------------
+        LK stocks
+    ---------------*/
+    .lk_info .stocks .block_head
+    {
+        margin-bottom: 30px !important;
+    }
+
+
+    .lk_info .stocks .stock
+    {
+        padding: 14px;
+    }
+
+    .lk_info .stocks .stock .features .price
+    {
+        font-size: 19px;
+        line-height: 23px;
+    }
+
+    .lk_info .stocks .stock .deposite_btn
+    {
+        margin-top: 20px;
+        padding: 12px 20px;
+    }
+
+
+
+    /*----------------
+        LK history
+    ----------------*/
+    .lk_info .history .block_head
+    {
+        margin-bottom: 25px !important;
+    }
+
+
+    .lk_info .history .items > * + *
+    {
+        margin-top: 15px;
+    }
+
+
+
+    /*-------------
+        Profile
+    -------------*/
+    .profile .row
+    {
+        margin-bottom: -20px;
+        margin-left: -20px;
+    }
+
+    .profile .row > *
+    {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+    .profile .row > *.big
+    {
+        width: calc(100% - 20px);
+    }
+
+
+    .profile .item
+    {
+        min-height: 99px;
+    }
+
+    .profile .item .info .name
+    {
+        font-size: 17px;
+        line-height: 19px;
+    }
+
+
+    .profile .item.big
+    {
+        padding: 16px 19px;
+    }
+
+
+
+    /*------------
+        LK ads
+    ------------*/
+    .lk_info .ads .service .col_right
+    {
+        width: calc(100% - 149px);
+    }
+
+
+
+    /*--------------------------
+        LK for organizations
+    --------------------------*/
+    .lk_info .for_organizations .form .work_scheme .time .field.row > * > span
+    {
+        font-size: 14px;
+    }
+
+
+
+    /*------------------
+        Ads category
+    ------------------*/
+    .ads_category.empty
+    {
+        padding: 25px;
+    }
+
+
+    .ads_category .row
+    {
+        margin-bottom: -20px;
+        margin-left: -20px;
+    }
+
+    .ads_category .row > *
+    {
+        width: calc(33.333% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+
+
+    /*-----------------
+        Author page
+    -----------------*/
+    .author_page
+    {
+        --sidebar_width: 320px;
+    }
+
+
+
+    /*--------------------
+        Author profile
+    --------------------*/
+    .author_profile
+    {
+        padding: 25px;
+    }
+
+
+    .author_profile .sticker
+    {
+        top: 25px;
+        right: 25px;
+    }
+
+    .author_profile .name
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+
+    .author_profile .gallery
+    {
+        width: calc(100% + 50px);
+        margin: 20px -25px 0;
+        padding: 0 25px;
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews
+    {
+        padding: 25px;
+    }
+
+    .reviews .list > * + *
+    {
+        margin-top: 25px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    #catalog_modal .title
+    {
+        margin-bottom: 30px;
+    }
+
+    #catalog_modal .category .name
+    {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    #catalog_modal .category .col > * + *
+    {
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Традиционная иконка сайта, размер 16x16, прозрачность поддерживается. Рекомендуемый формат: .ico или .png -->
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#f76b1c">
+		<meta name="theme-color" content="#f76b1c">
+
+		<!-- Подключение шрифтов с гугла -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/swiper.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<link rel="stylesheet" href="css/response_1159.css" media="print, (max-width: 1159px)">
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)">
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)">
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<button class="close">
+						<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+					</button>
+
+					<div class="mob_scroll">
+						<div class="cont row">
+							<div class="logo">
+								<a href="/">
+									<div class="name">ВСЕ.РФ</div>
+									<div class="desc">БИРЖА УСЛУГ</div>
+									<img data-src="images/logo.svg" alt="" class="lozad">
+								</a>
+							</div>
+
+							<div class="city">
+								<button class="btn modal_link" data-content="#city_modal">
+									<span>Волжский</span>
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_down"></use></svg>
+								</button>
+							</div>
+
+							<div class="balance">
+								<span>БАЛАНС:</span> <b>0 ₽</b>
+							</div>
+
+							<div class="support">
+								<a href="/">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_support"></use></svg>
+									<span class="count">3</span>
+								</a>
+							</div>
+
+							<div class="account">
+								<a href="/" class="profile">
+									<div class="avatar">
+										<img data-src="images/tmp/user_photo.jpg" alt="" class="lozad">
+									</div>
+
+									<span>ПРОФИЛЬ</span>
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_down"></use></svg>
+								</a>
+
+								<div class="dropdown">
+									<div><a href="/">Моя страница</a></div>
+									<div><a href="/">Личный кабинет</a></div>
+									<div><a href="/">Ховер</a></div>
+									<div><a href="/">Мои объявления</a></div>
+									<div><a href="/">Выход</a></div>
+								</div>
+							</div>
+
+							<div class="mob_menu">
+								<div><a href="/">Моя страница</a></div>
+								<div><a href="/">Личный кабинет</a></div>
+								<div><a href="/">Ховер</a></div>
+								<div><a href="/">Мои объявления</a></div>
+								<div><a href="/">Выход</a></div>
+							</div>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="mob_header">
+					<div class="cont">
+						<div class="logo">
+							<a href="/">
+								<div class="name">ВСЕ.РФ</div>
+								<div class="desc">БИРЖА УСЛУГ</div>
+								<img data-src="images/logo.svg" alt="" class="lozad">
+							</a>
+						</div>
+
+						<div class="support">
+							<a href="/">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_support"></use></svg>
+								<span class="count">3</span>
+							</a>
+						</div>
+
+						<button class="mob_menu_btn">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
+						</button>
+					</div>
+				</section>
+
+
+				<section class="content_flex block">
+					<div class="cont row">
+						<aside>
+							<div class="links">
+								<div class="title">
+									<a href="/">Личный кабинет</a>
+								</div>
+
+								<div class="items">
+									<div><a href="/">Фото профиля</a></div>
+									<div><a href="/">Объявления</a></div>
+									<div><a class="active">Баланс: 0 ₽</a></div>
+									<div><a href="/">Продвижение</a></div>
+									<div><a href="/">Чат с Поддержкой</a></div>
+									<div><a href="/">Обучение</a></div>
+									<div><a href="/">Для организаций</a></div>
+								</div>
+							</div>
+						</aside>
+
+
+						<section class="content">
+							<section class="lk_info">
+								<div class="data">
+									<section class="balance">
+										<div class="block_head">
+											<h1 class="title">Баланс</h1>
+
+											<div class="back">
+												<a href="/">
+													<img data-src="images/ic_back_arr.svg" alt="" class="lozad">
+													<span>Вернуться в Личный Кабинет</span>
+												</a>
+											</div>
+										</div>
+
+
+										<div class="info">
+											<form action="" class="form">
+												<div class="val">На вашем счету: <b>9 999 999 ₽</b></div>
+
+												<div class="title">Пополнить на:</div>
+
+												<div class="submit">
+													<input type="number" inputmode="numeric" pattern="[0-9]*" class="input" placeholder="500 ₽" min="1000">
+
+													<button type="submit" class="submit_btn">ОПЛАТИТЬ</button>
+												</div>
+
+												<div class="exp">*Введите сумму более 1000 ₽</div>
+											</form>
+
+											<div class="logos">
+												<img data-src="images/tmp/payment_logo1.svg" alt="" class="lozad">
+												<img data-src="images/tmp/payment_logo2.svg" alt="" class="lozad">
+												<img data-src="images/tmp/payment_logo3.svg" alt="" class="lozad">
+												<img data-src="images/tmp/payment_logo4.svg" alt="" class="lozad">
+												<img data-src="images/tmp/payment_logo5.svg" alt="" class="lozad">
+											</div>
+
+											<div class="text">
+												<p>Мы испольузем Яндекс.Кассу для приема платежей, не передаем данные третьи лицам, а все платежи надежно защищены и подтверждаются по SMS</p>
+											</div>
+										</div>
+
+
+										<div class="gifts">
+											<div class="block_head">
+												<div class="title">Подарки от ВСЕ.рф</div>
+											</div>
+
+											<div class="item">
+												<div class="icon">
+													<svg><use xlink:href="images/sprite.svg#ic_gift"></use></svg>
+												</div>
+
+												<div class="info">
+													<div class="name">Наша компания <span>каждый день дарит подарки</span> своим пользователям. Нажмите на кнопку и получите пополнение баланса на случайную сумму</div>
+												</div>
+
+												<a href="/" class="link">ПОЛУЧИТЬ ПОДАРОК</a>
+											</div>
+
+											<div class="item">
+												<div class="icon">
+													<svg><use xlink:href="images/sprite.svg#ic_gift"></use></svg>
+												</div>
+
+												<div class="info">
+													<div class="name">Наша компания <span>каждый день дарит подарки</span> своим пользователям. Нажмите на кнопку и получите пополнение баланса на случайную сумму</div>
+												</div>
+
+												<div class="timer" data-date="2021/12/25 22:34:56">
+													ПОДОЖДИТЕ
+													<span class="hours">00</span>:<span class="minutes">00</span>:<span class="seconds">00</span>
+												</div>
+											</div>
+										</div>
+									</section>
+								</div>
+							</section>
+						</section>
+					</div>
+				</section>
+			</div>
+
+
+			<footer>
+				<div class="cont row">
+					<div class="logo">
+						<div>
+							<div class="name">ВСЕ.РФ</div>
+							<div class="desc">БИРЖА УСЛУГ</div>
+							<img data-src="images/logo.svg" alt="" class="lozad">
+						</div>
+					</div>
+
+					<div class="copyright">Copyright &copy; 2020 Все.Рф Все права защищены</div>
+
+					<div class="links">
+						<div><a href="/">Правила сервиса</a></div>
+						<div><a href="/">Политика конфедициальности</a></div>
+						<div><a href="/">Контакты</a></div>
+					</div>
+				</div>
+			</footer>
+
+
+			<div class="overlay"></div>
+		</div>
+
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<div class="buttonUp">
+			<button>
+				<img data-src="images/ic_buttonUp.svg" alt="" class="lozad">
+			</button>
+		</div>
+
+
+		<section class="modal" id="city_modal">
+			<div class="modal_title">Выберите город</div>
+
+			<div class="modal_data">
+				<form action="" class="form">
+					<div class="line no_margin">
+						<div class="field">
+							<input type="text" name="" value="" class="input" placeholder="Введите город">
+						</div>
+
+						<div class="field tips">
+							<div><a href="/">Москва</a></div>
+							<div><a href="/">Санкт-Петербург</a></div>
+							<div><a href="/">Волгоград</a></div>
+							<div><a href="/">Самара</a></div>
+							<div><a href="/" class="active">Волжский</a></div>
+							<div><a href="/">Екатеринбург</a></div>
+							<div><a href="/">Нижний Новгородк</a></div>
+							<div><a href="/">Москва</a></div>
+							<div><a href="/">Санкт-Петербург</a></div>
+							<div><a href="/">Волгоград</a></div>
+							<div><a href="/">Самара</a></div>
+							<div><a href="/">Волжский</a></div>
+							<div><a href="/">Екатеринбург</a></div>
+							<div><a href="/">Нижний Новгородк</a></div>
+						</div>
+					</div>
+
+					<div class="submit">
+						<button type="button" class="submit_btn close">ПОКАЗАТЬ ОБЪЯВЛЕНИЯ В <span>ВОЛЖСКОМ</span></button>
+					</div>
+				</form>
+			</div>
+		</section>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/lozad.min.js"></script>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="js/inputmask.min.js"></script>
+		<script src="js/nice-select.js"></script>
+		<script src="js/fancybox.min.js"></script>
+		<script src="js/clipboard.min.js"></script>
+		<script src="js/countdown.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

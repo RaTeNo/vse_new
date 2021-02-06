@@ -1,0 +1,123 @@
+<section class="modal" id="ad_info_modal">
+    <div class="head">
+        <div class="title">Lada vesta 2019, состояние на 5, комплектация люкс</div>
+
+        <div class="price">450 000 ₽</div>
+
+        <div class="location">Комсомольск-на-Амуре</div>
+
+		<div class="date">Сегодня, 22:45</div>
+
+        <div class="views">
+            <svg class="icon"><use xlink:href="images/sprite.svg#ic_views"></use></svg>
+            <span>345 (+11)</span>
+        </div>
+    </div>
+
+    <div class="description">
+        <p>Продаю отличную машину. Все вопросы по телефону</p>
+    </div>
+
+    <div class="share">
+        <span>Поделиться:</span>
+
+        <div class="socials">
+            <button class="btn blue">
+                <svg class="icon icon1"><use xlink:href="images/sprite.svg#ic_share1"></use></svg>
+            </button>
+
+            <div class="dropdown">
+                <a href="/">
+                    <svg class="icon vkontakte"><use xlink:href="images/sprite.svg#ic_vkontakte"></use></svg>
+                </a>
+
+                <a href="/">
+                    <img src="images/ic_instagram.svg" alt="">
+                </a>
+
+                <a href="/">
+                    <svg class="icon facebook"><use xlink:href="images/sprite.svg#ic_facebook"></use></svg>
+                </a>
+
+                <a href="/">
+                    <svg class="icon odnokl"><use xlink:href="images/sprite.svg#ic_odnokl"></use></svg>
+                </a>
+            </div>
+        </div>
+
+        <button class="copy_text_btn btn green" data-clipboard-text="6666666666666666666666666666">
+            <svg class="icon icon2"><use xlink:href="images/sprite.svg#ic_share2"></use></svg>
+        </button>
+    </div>
+
+    <div class="bottom">
+        <div class="author">
+            <a href="/" class="photo empty">
+                <svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+            </a>
+
+            <div>
+                <div class="name">Василий Петрович</div>
+            </div>
+        </div>
+
+        <button class="phone_btn" data-fancybox data-type="ajax" data-src="/ad_phone_modal3.html">ПОКАЗАТЬ ТЕЛЕФОН</button>
+
+        <a href="/" class="profile_link">
+            <span>ПРОФИЛЬ</span>
+        </a>
+    </div>
+
+
+    <script>
+        $(() => {
+            // Вспылвашка с информацией об обьявлении - Описание
+            $('#ad_info_modal .description .spoler_btn').click(function (e) {
+                e.preventDefault()
+
+                let parent = $(this).closest('.description')
+
+                if ($(this).hasClass('active')) {
+                    $(this).removeClass('active')
+                    parent.find('.hide').slideUp(200)
+                } else {
+                    $(this).addClass('active')
+                    parent.find('.hide').slideDown(300)
+                }
+            })
+
+            // Вспылвашка с информацией об обьявлении - Характеристики
+            $('#ad_info_modal .features .spoler_btn').click(function (e) {
+                e.preventDefault()
+
+                let parent = $(this).closest('.features')
+
+                if ($(this).hasClass('active')) {
+                    $(this).removeClass('active')
+                    parent.find('.hide').slideUp(200)
+                } else {
+                    $(this).addClass('active')
+                    parent.find('.hide').slideDown(300)
+                }
+            })
+
+            // Вспылвашка с информацией об обьявлении - Галерея
+            new Swiper('#ad_info_modal .gallery .swiper-container', {
+                loop: false,
+                speed: 500,
+                watchSlidesVisibility: true,
+                slideActiveClass: 'active',
+                slideVisibleClass: 'visible',
+                spaceBetween: 14,
+                slidesPerView: 'auto',
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev'
+                }
+            })
+
+            // Копирование в буфер обмена
+            new ClipboardJS('.copy_text_btn')
+        })
+    </script>
+</section>

@@ -1,0 +1,115 @@
+<section class="modal" id="map_modal">
+    <div class="map_wrap">
+        <div id="map"></div>
+    </div>
+
+
+    <script>
+        $(() => {
+            ymaps.ready(function () {
+                let myMap = new ymaps.Map('map', {
+                    center: [55.708313, 37.747595],
+                    zoom: 14,
+                    controls: []
+                })
+
+                // Метка
+                let myPlacemark = new ymaps.Placemark([55.708313, 37.747595], {
+                    iconContent: '3',
+                    balloonContent : String()
+                        + '<div class="list">'
+                            + '<a href="/">'
+                                + '<div class="thumb">'
+                                    + '<img src="images/tmp/related_ad_thumb.jpg" alt="">'
+                                + '</div>'
+                                + '<div>'
+                                    + '<div class="name">2-к квартира, 45м², 1/5эт. в новостройке с ремонтом</div>'
+                                    + '<div class="price">1 450 000 ₽</div>'
+                                 + '</div>'
+                            + '</a>'
+
+                            + '<a href="/">'
+                                + '<div class="thumb">'
+                                    + '<img src="images/tmp/related_ad_thumb2.jpg" alt="">'
+                                + '</div>'
+                                + '<div>'
+                                    + '<div class="name">Mitsubishi Lancer Х 2012 состояние нового</div>'
+                                    + '<div class="price">1 450 000 ₽</div>'
+                                + '</div>'
+                            + '</a>'
+
+                            + '<a href="/">'
+                                + '<div class="thumb">'
+                                    + '<img src="images/tmp/related_ad_thumb3.jpg" alt="">'
+                                + '</div>'
+                                + '<div>'
+                                    + '<div class="name">2-к квартира</div>'
+                                    + '<div class="price">1 450 000 ₽</div>'
+                                + '</div>'
+                            + '</a>'
+                        + '</div>'
+                }, {
+                    iconLayout: 'default#imageWithContent',
+                    iconImageHref : '/images/ic_map_marker.svg',
+                    iconImageSize : [28, 28],
+                    iconImageOffset : [-14, -14],
+                    hideIconOnBalloonOpen : false,
+                    balloonShadow : false,
+                    balloonOffset : [-2, -8],
+                    iconContentLayout: ymaps.templateLayoutFactory.createClass('<div class="number">$[properties.iconContent]</div>')
+                })
+
+                myMap.geoObjects.add(myPlacemark)
+
+
+
+                // Метка 2
+                let myPlacemark2 = new ymaps.Placemark([55.709342, 37.727951], {
+                    iconContent: '3',
+                    balloonContent : String()
+                        + '<div class="list">'
+                            + '<a href="/">'
+                                + '<div class="thumb">'
+                                    + '<img src="images/tmp/related_ad_thumb.jpg" alt="">'
+                                + '</div>'
+                                + '<div>'
+                                    + '<div class="name">2-к квартира, 45м², 1/5эт. в новостройке с ремонтом</div>'
+                                    + '<div class="price">1 450 000 ₽</div>'
+                                 + '</div>'
+                            + '</a>'
+
+                            + '<a href="/">'
+                                + '<div class="thumb">'
+                                    + '<img src="images/tmp/related_ad_thumb2.jpg" alt="">'
+                                + '</div>'
+                                + '<div>'
+                                    + '<div class="name">Mitsubishi Lancer Х 2012 состояние нового</div>'
+                                    + '<div class="price">1 450 000 ₽</div>'
+                                + '</div>'
+                            + '</a>'
+                        + '</div>'
+                }, {
+                    iconLayout: 'default#imageWithContent',
+                    iconImageHref : '/images/ic_map_marker.svg',
+                    iconImageSize : [28, 28],
+                    iconImageOffset : [-14, -14],
+                    hideIconOnBalloonOpen : false,
+                    balloonShadow : false,
+                    balloonOffset : [-2, -8],
+                    iconContentLayout: ymaps.templateLayoutFactory.createClass('<div class="number">$[properties.iconContent]</div>')
+                })
+
+                myMap.geoObjects.add(myPlacemark2)
+
+                myMap.controls.add('zoomControl', {
+                    position : {
+                        right : '10px',
+                        top : '10px'
+                    }
+                })
+
+                myMap.behaviors.disable('scrollZoom')
+            })
+        })
+    </script>
+</section>

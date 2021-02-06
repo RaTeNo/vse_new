@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Традиционная иконка сайта, размер 16x16, прозрачность поддерживается. Рекомендуемый формат: .ico или .png -->
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#f76b1c">
+		<meta name="theme-color" content="#f76b1c">
+
+		<!-- Подключение шрифтов с гугла -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/swiper.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<link rel="stylesheet" href="css/response_1159.css" media="print, (max-width: 1159px)">
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)">
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)">
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<button class="close">
+						<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+					</button>
+
+					<div class="mob_scroll">
+						<div class="cont row">
+							<div class="logo">
+								<a href="/">
+									<div class="name">ВСЕ.РФ</div>
+									<div class="desc">БИРЖА УСЛУГ</div>
+									<img data-src="images/logo.svg" alt="" class="lozad">
+								</a>
+							</div>
+
+							<div class="account">
+								<div><a href="/">ВОЙТИ</a></div>
+								<div><a href="/">РЕГИСТРАЦИЯ</a></div>
+							</div>
+
+							<div class="city">
+								<button class="current modal_link" data-content="#city_modal">
+									Город: <b>Волжский</b>
+								</button>
+
+								<div class="mini_modal">
+									<div class="question">Ваш город: <b>Волжский?</b></div>
+
+									<button class="btn yes">ДА</button>
+
+									<button class="btn no modal_link" data-content="#city_modal">
+										<span>ИЗМЕНИТЬ</span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="mob_header">
+					<div class="cont">
+						<div class="logo">
+							<a href="/">
+								<div class="name">ВСЕ.РФ</div>
+								<div class="desc">БИРЖА УСЛУГ</div>
+								<img data-src="images/logo.svg" alt="" class="lozad">
+							</a>
+						</div>
+
+						<button class="mob_menu_btn">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
+						</button>
+					</div>
+				</section>
+
+
+				<section class="page_head">
+					<div class="cont">
+						<div class="catalog">
+							<button class="btn modal_link" data-content="#catalog_modal">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_catalog"></use></svg>
+								<span>КАТАЛОГ ОБЪЯВЛЕНИЙ</span>
+							</button>
+						</div>
+
+						<button class="add_ad_btn">ПОДАТЬ ОБЪЯВЛЕНИЕ</button>
+
+						<div class="search">
+							<form action="">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+
+								<input type="text" name="" value="" class="input" placeholder="Поисковый запрос">
+
+								<button type="submit" class="submit_btn">ИСКАТЬ</button>
+
+								<div class="tips">
+									<div class="tip"><a href="/">ремонт квартир</a></div>
+									<div class="tip"><a href="/">ремонт холодильников</a></div>
+									<div class="tip"><a href="/">ремонт микроволновок</a></div>
+									<div class="tip"><a href="/">ремонт домов</a></div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="author_page block">
+					<div class="cont">
+						<div class="block_head">
+							<div class="back">
+								<a href="/">
+									<img data-src="images/ic_back_arr.svg" alt="" class="lozad">
+									<span>На главную</span>
+								</a>
+							</div>
+						</div>
+
+
+						<div class="content_flex row">
+							<section class="content">
+								<section class="author_profile">
+									<div class="sticker">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_service2"></use></svg>
+
+										<div class="tooltip"><b>ВСЕ.РФ</b> рекомендует!</div>
+									</div>
+
+									<div class="thumb">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+
+										<img data-src="images/tmp/author_profile_thumb.jpg" alt="" class="lozad">
+									</div>
+
+									<div class="info">
+										<div class="online yellow">был недавно</div>
+
+										<div class="name">
+											ООО ТРАНС-СЕРВИС-БУР-ДОМО-СТРОЙ САНКТ-ПЕТЕРБУРГ И ОБЛАСТЬ
+											<div class="mark">
+												<img src="images/ic_mark.svg" alt="">
+												<div class="tooltip">Паспорт проверен</div>
+											</div>
+										</div>
+
+										<div class="location">Комсомольск-на-Амуре</div>
+									</div>
+
+									<div class="bottom">
+										<button class="phone_btn" data-fancybox data-type="ajax" data-src="/ad_phone_modal.html">ПОКАЗАТЬ ТЕЛЕФОН</button>
+
+										<div class="share">
+											<span>Поделиться:</span>
+
+											<div class="socials">
+												<button class="btn blue">
+													<svg class="icon icon1"><use xlink:href="images/sprite.svg#ic_share1"></use></svg>
+												</button>
+
+												<div class="dropdown">
+													<a href="/">
+														<svg class="icon vkontakte"><use xlink:href="images/sprite.svg#ic_vkontakte"></use></svg>
+													</a>
+
+													<a href="/">
+														<img src="images/ic_instagram.svg" alt="">
+													</a>
+
+													<a href="/">
+														<svg class="icon facebook"><use xlink:href="images/sprite.svg#ic_facebook"></use></svg>
+													</a>
+
+													<a href="/">
+														<svg class="icon odnokl"><use xlink:href="images/sprite.svg#ic_odnokl"></use></svg>
+													</a>
+												</div>
+											</div>
+
+											<button class="copy_btn btn green">
+												<svg class="icon icon2"><use xlink:href="images/sprite.svg#ic_share2"></use></svg>
+											</button>
+										</div>
+									</div>
+								</section>
+
+
+								<section class="ads_category">
+									<div class="block_head">
+										<div class="title">Транспорт</div>
+									</div>
+
+									<div class="row">
+										<div class="ad">
+											<div class="thumb">
+												<div class="position">Позиция: 999</div>
+
+												<div class="links">
+													<a href="#" class="edit_link">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_edit"></use></svg>
+													</a>
+
+													<a href="#" class="promotion_link">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_profile_promotion"></use></svg>
+													</a>
+												</div>
+
+												<div class="swiper-container" data-fancybox data-type="ajax" data-src="/ad_info_modal.html">
+													<div class="swiper-wrapper">
+														<div class="slide swiper-slide">
+															<img data-src="images/tmp/ad_thumb.jpg" alt="" class="lozad">
+														</div>
+
+														<div class="slide swiper-slide">
+															<img data-src="images/tmp/ad_thumb.jpg" alt="" class="lozad">
+														</div>
+
+														<div class="slide swiper-slide">
+															<img data-src="images/tmp/ad_thumb.jpg" alt="" class="lozad">
+														</div>
+													</div>
+
+													<div class="swiper-pagination"></div>
+												</div>
+											</div>
+
+											<div class="info">
+												<div class="name">
+													<span data-fancybox data-type="ajax" data-src="/ad_info_modal.html">Mitsubishi Lancer Х 2012 состояние нового</span>
+
+													<a href="/" class="link">
+														<svg><use xlink:href="images/sprite.svg#ic_open"></use></svg>
+													</a>
+												</div>
+
+												<div class="price">450 000 ₽</div>
+
+												<div class="location">Комсомольск-на-Амуре</div>
+
+												<div class="date">Сегодня, 22:45</div>
+											</div>
+										</div>
+
+
+										<div class="ad recommend">
+											<div class="thumb">
+												<div class="sticker">
+													<svg><use xlink:href="images/sprite.svg#ic_service2"></use></svg>
+												</div>
+
+												<div class="position">Позиция: 999</div>
+
+												<div class="links">
+													<a href="#" class="edit_link">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_edit"></use></svg>
+													</a>
+
+													<a href="#" class="promotion_link">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_profile_promotion"></use></svg>
+													</a>
+												</div>
+
+												<div class="swiper-container" data-fancybox data-type="ajax" data-src="/ad_info_modal.html">
+													<div class="swiper-wrapper">
+														<div class="slide swiper-slide">
+															<img data-src="images/tmp/ad_thumb2.jpg" alt="" class="lozad">
+														</div>
+
+														<div class="slide swiper-slide">
+															<img data-src="images/tmp/ad_thumb2.jpg" alt="" class="lozad">
+														</div>
+
+														<div class="slide swiper-slide">
+															<img data-src="images/tmp/ad_thumb2.jpg" alt="" class="lozad">
+														</div>
+
+														<div class="slide swiper-slide">
+															<img data-src="images/tmp/ad_thumb2.jpg" alt="" class="lozad">
+														</div>
+													</div>
+
+													<div class="swiper-pagination"></div>
+												</div>
+											</div>
+
+											<div class="info">
+												<div class="name">
+													<span data-fancybox data-type="ajax" data-src="/ad_info_modal.html">Lada vesta 2019, состояние на 5, комплектация люкс</span>
+
+													<a href="/" class="link">
+														<svg><use xlink:href="images/sprite.svg#ic_open"></use></svg>
+													</a>
+												</div>
+
+												<div class="price">450 000 ₽</div>
+
+												<div class="location">Комсомольск-на-Амуре</div>
+
+												<div class="date">Сегодня, 22:45</div>
+											</div>
+										</div>
+
+
+										<a href="/" class="add_ad_link">
+											<div class="icon">
+												<svg><use xlink:href="images/sprite.svg#ic_add"></use></svg>
+											</div>
+											<div>Добавить<br> Объявление</div>
+										</a>
+									</div>
+								</section>
+
+
+								<section class="ads_category">
+									<div class="block_head">
+										<div class="title">Недвижимость</div>
+									</div>
+
+									<div class="row">
+										<div class="ad">
+											<div class="thumb">
+												<div class="position">Позиция: 999</div>
+
+												<div class="links">
+													<a href="#" class="edit_link">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_edit"></use></svg>
+													</a>
+
+													<a href="#" class="promotion_link">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_profile_promotion"></use></svg>
+													</a>
+												</div>
+
+												<div class="swiper-container" data-fancybox data-type="ajax" data-src="/ad_info_modal.html">
+													<div class="swiper-wrapper">
+														<div class="slide swiper-slide">
+															<img data-src="images/tmp/ad_thumb7.jpg" alt="" class="lozad">
+														</div>
+
+														<div class="slide swiper-slide">
+															<img data-src="images/tmp/ad_thumb7.jpg" alt="" class="lozad">
+														</div>
+
+														<div class="slide swiper-slide">
+															<img data-src="images/tmp/ad_thumb7.jpg" alt="" class="lozad">
+														</div>
+													</div>
+
+													<div class="swiper-pagination"></div>
+												</div>
+											</div>
+
+											<div class="info">
+												<div class="name">
+													<span data-fancybox data-type="ajax" data-src="/ad_info_modal.html">Дача 22.5 м² на участке 5.4 сот.</span>
+
+													<a href="/" class="link">
+														<svg><use xlink:href="images/sprite.svg#ic_open"></use></svg>
+													</a>
+												</div>
+
+												<div class="price">1 450 000 ₽</div>
+
+												<div class="location">Комсомольск-на-Амуре</div>
+
+												<div class="date">Сегодня, 22:45</div>
+											</div>
+										</div>
+
+
+										<div class="ad">
+											<div class="thumb">
+												<div class="position">Позиция: 999</div>
+
+												<div class="links">
+													<a href="#" class="edit_link">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_edit"></use></svg>
+													</a>
+
+													<a href="#" class="promotion_link">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_profile_promotion"></use></svg>
+													</a>
+												</div>
+
+												<div class="swiper-container" data-fancybox data-type="ajax" data-src="/ad_info_modal.html">
+													<div class="swiper-wrapper">
+														<div class="slide swiper-slide">
+															<img data-src="images/tmp/ad_thumb8.jpg" alt="" class="lozad">
+														</div>
+
+														<div class="slide swiper-slide">
+															<img data-src="images/tmp/ad_thumb8.jpg" alt="" class="lozad">
+														</div>
+
+														<div class="slide swiper-slide">
+															<img data-src="images/tmp/ad_thumb8.jpg" alt="" class="lozad">
+														</div>
+
+														<div class="slide swiper-slide">
+															<img data-src="images/tmp/ad_thumb8.jpg" alt="" class="lozad">
+														</div>
+													</div>
+
+													<div class="swiper-pagination"></div>
+												</div>
+											</div>
+
+											<div class="info">
+												<div class="name">
+													<span data-fancybox data-type="ajax" data-src="/ad_info_modal.html">2-к квартира, 45 м², 1/5 эт. в новостройке</span>
+
+													<a href="/" class="link">
+														<svg><use xlink:href="images/sprite.svg#ic_open"></use></svg>
+													</a>
+												</div>
+
+												<div class="price">2 450 000 ₽</div>
+
+												<div class="location">Комсомольск-на-Амуре</div>
+
+												<div class="date">Сегодня, 22:45</div>
+											</div>
+										</div>
+
+
+										<div class="ad">
+											<div class="thumb">
+												<div class="position">Позиция: 999</div>
+
+												<div class="links">
+													<a href="#" class="edit_link">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_edit"></use></svg>
+													</a>
+
+													<a href="#" class="promotion_link">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_profile_promotion"></use></svg>
+													</a>
+												</div>
+
+												<div class="swiper-container" data-fancybox data-type="ajax" data-src="/ad_info_modal.html">
+													<div class="swiper-wrapper">
+														<div class="slide swiper-slide">
+															<img data-src="images/tmp/ad_thumb9.jpg" alt="" class="lozad">
+														</div>
+
+														<div class="slide swiper-slide">
+															<img data-src="images/tmp/ad_thumb9.jpg" alt="" class="lozad">
+														</div>
+													</div>
+
+													<div class="swiper-pagination"></div>
+												</div>
+											</div>
+
+											<div class="info">
+												<div class="name">
+													<span data-fancybox data-type="ajax" data-src="/ad_info_modal.html">1-к квартира, 34 м², 4/5 эт.</span>
+
+													<a href="/" class="link">
+														<svg><use xlink:href="images/sprite.svg#ic_open"></use></svg>
+													</a>
+												</div>
+
+												<div class="price">3 450 000 ₽</div>
+
+												<div class="location">Комсомольск-на-Амуре</div>
+
+												<div class="date">Сегодня, 22:45</div>
+											</div>
+										</div>
+
+
+										<div class="ad">
+											<div class="thumb">
+												<div class="position">Позиция: 999</div>
+
+												<div class="links">
+													<a href="#" class="edit_link">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_edit"></use></svg>
+													</a>
+
+													<a href="#" class="promotion_link">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_profile_promotion"></use></svg>
+													</a>
+												</div>
+
+												<div class="swiper-container" data-fancybox data-type="ajax" data-src="/ad_info_modal.html">
+													<div class="swiper-wrapper">
+														<div class="slide swiper-slide">
+															<img data-src="images/tmp/ad_thumb10.jpg" alt="" class="lozad">
+														</div>
+
+														<div class="slide swiper-slide">
+															<img data-src="images/tmp/ad_thumb10.jpg" alt="" class="lozad">
+														</div>
+
+														<div class="slide swiper-slide">
+															<img data-src="images/tmp/ad_thumb10.jpg" alt="" class="lozad">
+														</div>
+													</div>
+
+													<div class="swiper-pagination"></div>
+												</div>
+											</div>
+
+											<div class="info">
+												<div class="name">
+													<span data-fancybox data-type="ajax" data-src="/ad_info_modal.html">Дача 22.5 м² на участке 5.4 сот.</span>
+
+													<a href="/" class="link">
+														<svg><use xlink:href="images/sprite.svg#ic_open"></use></svg>
+													</a>
+												</div>
+
+												<div class="price">1 450 000 ₽</div>
+
+												<div class="location">Комсомольск-на-Амуре</div>
+
+												<div class="date">Сегодня, 22:45</div>
+											</div>
+										</div>
+									</div>
+								</section>
+
+
+								<section class="ads_category">
+									<div class="block_head">
+										<div class="title">Услуги</div>
+									</div>
+
+									<div class="row">
+										<div class="ad">
+											<div class="thumb">
+												<div class="position">Позиция: 999</div>
+
+												<div class="links">
+													<a href="#" class="edit_link">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_edit"></use></svg>
+													</a>
+
+													<a href="#" class="promotion_link">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_profile_promotion"></use></svg>
+													</a>
+												</div>
+
+												<div class="swiper-container" data-fancybox data-type="ajax" data-src="/ad_info_modal.html">
+													<div class="swiper-wrapper">
+														<div class="slide swiper-slide">
+															<img data-src="images/tmp/ad_thumb13.jpg" alt="" class="lozad">
+														</div>
+
+														<div class="slide swiper-slide">
+															<img data-src="images/tmp/ad_thumb13.jpg" alt="" class="lozad">
+														</div>
+
+														<div class="slide swiper-slide">
+															<img data-src="images/tmp/ad_thumb13.jpg" alt="" class="lozad">
+														</div>
+													</div>
+
+													<div class="swiper-pagination"></div>
+												</div>
+											</div>
+
+											<div class="info">
+												<div class="name">
+													<span data-fancybox data-type="ajax" data-src="/ad_info_modal.html">Грузоперевозки, Переезды, Грузчики. Вывоз мусора</span>
+
+													<a href="/" class="link">
+														<svg><use xlink:href="images/sprite.svg#ic_open"></use></svg>
+													</a>
+												</div>
+
+												<div class="price">500 ₽</div>
+
+												<div class="location">Комсомольск-на-Амуре</div>
+
+												<div class="date">Сегодня, 22:45</div>
+											</div>
+										</div>
+
+
+										<div class="ad">
+											<div class="thumb">
+												<div class="position">Позиция: 999</div>
+
+												<div class="links">
+													<a href="#" class="edit_link">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_edit"></use></svg>
+													</a>
+
+													<a href="#" class="promotion_link">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_profile_promotion"></use></svg>
+													</a>
+												</div>
+
+												<div class="swiper-container" data-fancybox data-type="ajax" data-src="/ad_info_modal.html">
+													<div class="swiper-wrapper">
+														<div class="slide swiper-slide">
+															<img data-src="images/tmp/ad_thumb14.jpg" alt="" class="lozad">
+														</div>
+
+														<div class="slide swiper-slide">
+															<img data-src="images/tmp/ad_thumb14.jpg" alt="" class="lozad">
+														</div>
+
+														<div class="slide swiper-slide">
+															<img data-src="images/tmp/ad_thumb14.jpg" alt="" class="lozad">
+														</div>
+
+														<div class="slide swiper-slide">
+															<img data-src="images/tmp/ad_thumb14.jpg" alt="" class="lozad">
+														</div>
+													</div>
+
+													<div class="swiper-pagination"></div>
+												</div>
+											</div>
+
+											<div class="info">
+												<div class="name">
+													<span data-fancybox data-type="ajax" data-src="/ad_info_modal.html">Пассажирские перевозки на легковом автомобиле</span>
+
+													<a href="/" class="link">
+														<svg><use xlink:href="images/sprite.svg#ic_open"></use></svg>
+													</a>
+												</div>
+
+												<div class="price">500 ₽</div>
+
+												<div class="location">Комсомольск-на-Амуре</div>
+
+												<div class="date">Сегодня, 22:45</div>
+											</div>
+										</div>
+									</div>
+								</section>
+
+
+								<section class="reviews" id="reviews">
+									<div class="block_head">
+										<div class="title">Отзывов пока нет</div>
+
+										<div class="desc">Вы сотрудничали с этим пользователем? Оставьте отзыв о его работе</div>
+									</div>
+
+									<button class="add_review_btn modal_link" data-content="#add_review_modal">НАПИСАТЬ ОТЗЫВ</button>
+								</section>
+
+
+								<section class="reviews">
+									<div class="block_head">
+										<div class="title">51 отзыв</div>
+
+										<div class="desc">Вы сотрудничали с этим пользователем? Оставьте отзыв о его работе</div>
+									</div>
+
+									<button class="add_review_btn modal_link" data-content="#add_review_modal">НАПИСАТЬ ОТЗЫВ</button>
+
+
+									<div class="list">
+										<div class="review">
+											<div class="author">
+												<div class="photo blue">И</div>
+
+												<div>
+													<div class="name">Иван П.</div>
+
+													<div class="rating">
+														<div class="stars">
+															<img src="images/ic_star_a.svg" alt="">
+															<img src="images/ic_star.svg" alt="">
+															<img src="images/ic_star.svg" alt="">
+															<img src="images/ic_star.svg" alt="">
+															<img src="images/ic_star.svg" alt="">
+														</div>
+													</div>
+
+													<button class="hide_show_btn">
+														<span>Скрыть отзыв</span>
+														<span>Показать отзыв</span>
+													</button>
+												</div>
+											</div>
+
+											<div class="date">09.01.2020</div>
+
+											<div class="text">
+												<p>Не рекомендую работать с этим человеком!!!</p>
+											</div>
+										</div>
+
+
+										<div class="review">
+											<div class="author">
+												<div class="photo red">М</div>
+
+												<div>
+													<div class="name">Марина П.</div>
+
+													<div class="rating">
+														<div class="stars">
+															<img src="images/ic_star_a.svg" alt="">
+															<img src="images/ic_star_a.svg" alt="">
+															<img src="images/ic_star_a.svg" alt="">
+															<img src="images/ic_star_a.svg" alt="">
+															<img src="images/ic_star.svg" alt="">
+														</div>
+													</div>
+
+													<button class="hide_show_btn">
+														<span>Скрыть отзыв</span>
+														<span>Показать отзыв</span>
+													</button>
+												</div>
+											</div>
+
+											<div class="date">09.01.2020</div>
+
+											<div class="text">
+												<p>Не однократно заказываю уже уборку дома. Очень нравится как ребята работают. Очень рекомендую за качество выполненной работы 👍👍 Если уборка то только Сафари 👍👍 , спасибо за качество обслуживания.</p>
+											</div>
+										</div>
+
+
+										<div class="review hidden">
+											<div class="author">
+												<div class="photo green">Д</div>
+
+												<div>
+													<div class="name">Дмитрий П.</div>
+
+													<div class="rating">
+														<div class="stars">
+															<img src="images/ic_star_a.svg" alt="">
+															<img src="images/ic_star_a.svg" alt="">
+															<img src="images/ic_star_a.svg" alt="">
+															<img src="images/ic_star_a.svg" alt="">
+															<img src="images/ic_star.svg" alt="">
+														</div>
+													</div>
+
+													<button class="hide_show_btn active">
+														<span>Скрыть отзыв</span>
+														<span>Показать отзыв</span>
+													</button>
+												</div>
+											</div>
+
+											<div class="date">09.01.2020</div>
+
+											<div class="text">
+												<p>Заказывала уборку квартиры, все выпонелнено на 5+. Девочки очень вежливые и ответственные. Рекомендую</p>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="pagination small center">
+										<a href="/" class="prev">В начало</a>
+
+										<a class="active">1</a>
+										<a href="/">2</a>
+										<a href="/">3</a>
+										<a href="/">4</a>
+										<a href="/">5</a>
+										<div class="sep">...</div>
+
+										<a href="/" class="next">Далее</a>
+									</div>
+								</section>
+							</section>
+
+
+							<aside>
+								<div class="your_page">
+									<div class="photo">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+									</div>
+
+									<div>
+										<div class="title">Это ваша страница</div>
+
+										<div class="desc">Вы можете управлять ей из <a href="/">Личного Кабинета</a></div>
+									</div>
+								</div>
+
+
+								<div class="rating">
+									<div class="title">Рейтинг пользователя</div>
+
+									<div class="val">4.5</div>
+									<div class="stars">
+										<img src="images/ic_star_a.svg" alt="">
+										<img src="images/ic_star_a.svg" alt="">
+										<img src="images/ic_star_a.svg" alt="">
+										<img src="images/ic_star_a.svg" alt="">
+										<img src="images/ic_star.svg" alt="">
+									</div>
+								</div>
+
+
+								<div class="reviews">
+									<div class="list">
+										<div class="review">
+											<div class="author">
+												<div class="photo blue">И</div>
+
+												<div>
+													<div class="name">Иван П.</div>
+
+													<div class="rating">
+														<div class="stars">
+															<img src="images/ic_star_a.svg" alt="">
+															<img src="images/ic_star_a.svg" alt="">
+															<img src="images/ic_star_a.svg" alt="">
+															<img src="images/ic_star_a.svg" alt="">
+															<img src="images/ic_star.svg" alt="">
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="date">09.01.2020</div>
+
+											<div class="text">
+												<p>Отличная компания!Сотрудники приехали в срок,сумма оговорённая заранее не выросла (чем в последнее время многие грешат),все…</p>
+
+												<div class="hide">
+													<p>Отличная компания!Сотрудники приехали в срок,сумма оговорённая заранее не выросла (чем в последнее время многие грешат),все…</p>
+												</div>
+
+												<button class="spoler_btn">
+													<span>Еще</span>
+													<span>Свернуть</span>
+												</button>
+											</div>
+										</div>
+									</div>
+
+									<button class="all_link scroll_link" data-anchor="#reviews">Читать остальные отзывы</button>
+								</div>
+
+
+								<div class="related_ads">
+									<div class="block_head">
+										<div class="title mini">Другие похожие обьявления</div>
+									</div>
+
+									<div class="list">
+										<div class="ad recommend" data-fancybox data-type="ajax" data-src="/ad_info_modal.html">
+											<div class="sticker">
+												<svg><use xlink:href="images/sprite.svg#ic_service2"></use></svg>
+											</div>
+
+											<div class="thumb">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_empty_image"></use></svg>
+
+												<img src="images/tmp/related_ad_thumb.jpg" alt="">
+											</div>
+
+											<div class="info">
+												<div class="name">Mitsubishi Lancer Х 2012 состояние нового</div>
+
+												<div class="price">450 000 ₽</div>
+											</div>
+										</div>
+
+										<div class="ad" data-fancybox data-type="ajax" data-src="/ad_info_modal.html">
+											<div class="thumb">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_empty_image"></use></svg>
+
+												<img src="images/tmp/related_ad_thumb2.jpg" alt="">
+											</div>
+
+											<div class="info">
+												<div class="name">Продам квартиру 50м2, отличное состояние, ремонт</div>
+
+												<div class="price">349 000 ₽</div>
+											</div>
+										</div>
+
+										<div class="ad" data-fancybox data-type="ajax" data-src="/ad_info_modal.html">
+											<div class="thumb">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_empty_image"></use></svg>
+
+												<img src="images/tmp/related_ad_thumb3.jpg" alt="">
+											</div>
+
+											<div class="info">
+												<div class="name">Уборка квартиры в любое время, круглосуточно</div>
+
+												<div class="price">по договоренности</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<button class="hide_ad_btn">СКРЫТЬ РЕКЛАМУ В ПРОФИЛЕ</button>
+							</aside>
+						</div>
+					</div>
+				</section>
+			</div>
+
+
+			<footer>
+				<div class="cont row">
+					<div class="logo">
+						<div>
+							<div class="name">ВСЕ.РФ</div>
+							<div class="desc">БИРЖА УСЛУГ</div>
+							<img data-src="images/logo.svg" alt="" class="lozad">
+						</div>
+					</div>
+
+					<div class="copyright">Copyright &copy; 2020 Все.Рф Все права защищены</div>
+
+					<div class="links">
+						<div><a href="/">Правила сервиса</a></div>
+						<div><a href="/">Политика конфедициальности</a></div>
+						<div><a href="/">Контакты</a></div>
+					</div>
+				</div>
+			</footer>
+
+
+			<div class="overlay"></div>
+		</div>
+
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<div class="buttonUp">
+			<button>
+				<img data-src="images/ic_buttonUp.svg" alt="" class="lozad">
+			</button>
+		</div>
+
+
+		<section class="modal" id="city_modal">
+			<div class="modal_title">Выберите город</div>
+
+			<div class="modal_data">
+				<form action="" class="form">
+					<div class="line no_margin">
+						<div class="field">
+							<input type="text" name="" value="" class="input" placeholder="Введите город">
+						</div>
+
+						<div class="field tips">
+							<div><a href="/">Москва</a></div>
+							<div><a href="/">Санкт-Петербург</a></div>
+							<div><a href="/">Волгоград</a></div>
+							<div><a href="/">Самара</a></div>
+							<div><a href="/" class="active">Волжский</a></div>
+							<div><a href="/">Екатеринбург</a></div>
+							<div><a href="/">Нижний Новгородк</a></div>
+							<div><a href="/">Москва</a></div>
+							<div><a href="/">Санкт-Петербург</a></div>
+							<div><a href="/">Волгоград</a></div>
+							<div><a href="/">Самара</a></div>
+							<div><a href="/">Волжский</a></div>
+							<div><a href="/">Екатеринбург</a></div>
+							<div><a href="/">Нижний Новгородк</a></div>
+						</div>
+					</div>
+
+					<div class="submit">
+						<button type="button" class="submit_btn close">ПОКАЗАТЬ ОБЪЯВЛЕНИЯ В <span>ВОЛЖСКОМ</span></button>
+					</div>
+				</form>
+			</div>
+		</section>
+
+
+		<section class="modal" id="add_review_modal">
+			<form action="" class="form">
+				<div class="line author">
+					<div class="photo">
+						<img src="images/tmp/add_review_thumb.jpg" alt="">
+					</div>
+
+					<div>
+						<div class="name">Перевозка 134</div>
+
+						<div class="rating">
+							<div class="val">4.5</div>
+							<div class="stars">
+								<img src="images/ic_star_a.svg" alt="">
+								<img src="images/ic_star_a.svg" alt="">
+								<img src="images/ic_star_a.svg" alt="">
+								<img src="images/ic_star_a.svg" alt="">
+								<img src="images/ic_star.svg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="line rate">
+					<div class="field">
+						<input type="radio" name="rating" id="rating-5">
+						<label for="rating-5"></label>
+						<input type="radio" name="rating" id="rating-4">
+						<label for="rating-4"></label>
+						<input type="radio" name="rating" id="rating-3">
+						<label for="rating-3"></label>
+						<input type="radio" name="rating" id="rating-2">
+						<label for="rating-2"></label>
+						<input type="radio" name="rating" id="rating-1">
+						<label for="rating-1"></label>
+					</div>
+				</div>
+
+				<div class="hide">
+					<div class="line">
+						<div class="label">Ваше имя*</div>
+
+						<div class="field">
+							<input type="text" name="" value="" class="input" placeholder="Иван Петрович">
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<textarea name="" minlength="50" placeholder="Ваш отзыв… (Минимум 50 символов)" class="with_limit"></textarea>
+						</div>
+
+						<div class="limit">Введено символов: <span class="current">0</span>, минимум 50</div>
+					</div>
+				</div>
+
+
+				<div class="submit">
+					<button type="submit" class="submit_btn" disabled>ОТПРАВИТЬ</button>
+				</div>
+			</form>
+		</section>
+
+
+		<section class="modal" id="add_review_phone_modal">
+			<div class="step step1">
+				<div class="title">Что бы добавить отзыв, пожалуйста подтвердите свой номер телефона</div>
+
+				<div class="modal_data">
+					<form action="" class="form">
+						<div class="line">
+							<div class="label">Введите свой номер телефона*</div>
+
+							<div class="field">
+								<input type="tel" name="" value="" class="input" placeholder="+7(983)123-31-23">
+
+								<button type="submit" class="submit_btn">ВЫСЛАТЬ КОД</button>
+							</div>
+						</div>
+
+						<div class="line captcha">
+							<div class="field">
+								<img src="images/tmp/captcha_img.png" alt="">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+
+
+			<div class="step step2">
+				<div class="title">Код отправлен на номер +7(983)123-31-23.<br> Запросить повторно через 95 секунд.</div>
+
+				<div class="modal_data">
+					<form action="" class="form">
+						<div class="line">
+							<div class="label">Введите полученный код</div>
+
+							<div class="field">
+								<input type="number" min="0" inputmode="numeric" pattern="[0-9]*" class="input" placeholder="1234567">
+							</div>
+						</div>
+
+						<div class="submit">
+							<div class="back">
+								<button type="button">
+									<img data-src="images/ic_back_arr.svg" alt="" class="lozad">
+									<span>Изменить номер</span>
+								</button>
+							</div>
+
+							<button type="submit" class="submit_btn">ОСТАВИТЬ ОТЗЫВ</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="modal" id="report_modal">
+			<div class="title">Пожалуйста, опишите возникшую проблему с данным пользователем</div>
+
+			<form action="" class="form">
+				<div class="line">
+					<div class="field">
+						<textarea name="" placeholder="Проблема…"></textarea>
+					</div>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">ОТПРАВИТЬ</button>
+				</div>
+			</form>
+		</section>
+
+
+		<section class="modal" id="catalog_modal">
+			<div class="title">Все категории в Волжском</div>
+
+
+			<div class="category">
+				<div class="name">Услуги</div>
+
+				<div class="links">
+					<div class="col">
+						<div><a href="/">IT, интернет, телеком</a></div>
+						<div><a href="/">Бытовые услуги</a></div>
+						<div><a href="/">Деловые услуги</a></div>
+						<div><a href="/">Искусство</a></div>
+						<div><a href="/">Красота, здоровье</a></div>
+						<div><a href="/">Доставка, курьеры</a></div>
+					</div>
+
+					<div class="col">
+						<div><a href="/">Мастер на час</a></div>
+						<div><a href="/">Оборудование, производство</a></div>
+						<div><a href="/">Обучение, курсы</a></div>
+						<div><a href="/">Охрана, безопасность</a></div>
+						<div><a href="/">Доставка еды и продуктов</a></div>
+						<div><a href="/">Реклама, полиграфия</a></div>
+					</div>
+
+					<div class="col">
+						<div><a href="/">Ремонт и обслуживание техники</a></div>
+						<div><a href="/">Ремонт, строительство</a></div>
+						<div><a href="/">Сад, благоустройство</a></div>
+						<div><a href="/">Транспорт, перевозки</a></div>
+						<div><a href="/">Уборка</a></div>
+						<div><a href="/">Установка техники</a></div>
+					</div>
+
+					<div class="col">
+						<div><a href="/">Уход за животными</a></div>
+						<div><a href="/">Фото- и видеосъёмка</a></div>
+						<div><a href="/">Другое</a></div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="category">
+				<div class="name">Недвижимость</div>
+
+				<div class="links">
+					<div class="col">
+						<div><a href="/">Все квартиры</a></div>
+						<div><a href="/">Квартиры в новостройках</a></div>
+						<div><a href="/">Квартиры в аренду</a></div>
+						<div><a href="/">Квартиры посуточно</a></div>
+					</div>
+
+					<div class="col">
+						<div><a href="/">Отели и гостиницы</a></div>
+						<div><a href="/">Дома, дачи, коттеджи</a></div>
+						<div><a href="/">Комнаты</a></div>
+						<div><a href="/">Коммерческая недвижимость</a></div>
+					</div>
+
+					<div class="col">
+						<div><a href="/">Земельные участки</a></div>
+						<div><a href="/">Гаражи и машиноместа</a></div>
+						<div><a href="/">Покупатели квартир</a></div>
+						<div><a href="/">Арендаторы квартир</a></div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="category">
+				<div class="name">Транспорт</div>
+
+				<div class="links">
+					<div class="col">
+						<div><a href="/">Автомобили</a></div>
+						<div><a href="/">Мотоциклы и мототехника</a></div>
+						<div><a href="/">Грузовики и спецтехника</a></div>
+						<div><a href="/">Водный транспорт</a></div>
+						<div><a href="/">Запчасти и аксессуары</a></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/lozad.min.js"></script>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="js/inputmask.min.js"></script>
+		<script src="js/nice-select.js"></script>
+		<script src="js/fancybox.min.js"></script>
+		<script src="js/clipboard.min.js"></script>
+		<script src="js/countdown.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

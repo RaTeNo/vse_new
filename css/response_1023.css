@@ -1,0 +1,719 @@
+@media print, (max-width: 1023px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_title: 26px;
+    }
+
+
+    .block
+    {
+        margin-bottom: 70px;
+    }
+
+
+    .content_flex .content
+    {
+        width: 100%;
+    }
+
+
+    .tablet_hide
+    {
+        display: none;
+    }
+
+
+
+    /*----------------
+        Pagination
+    ----------------*/
+    .pagination
+    {
+        font-size: 15px;
+        line-height: 51px;
+    }
+
+    .pagination a,
+    .pagination .sep
+    {
+        width: 51px;
+        height: 51px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        min-height: 85px;
+        margin-bottom: 40px;
+        padding: 15px 0;
+    }
+
+
+    header .account > * + *
+    {
+        margin-left: 30px;
+    }
+
+
+    header .city
+    {
+        margin-left: 30px;
+    }
+
+
+    header .city .mini_modal
+    {
+        padding: 15px;
+    }
+
+    header .city .mini_modal .question
+    {
+        margin-bottom: 10px;
+    }
+
+    header .city .mini_modal .btn + .btn
+    {
+        margin-top: 10px;
+    }
+
+
+    header .balance
+    {
+        margin-left: 30px;
+    }
+
+    header .balance b
+    {
+        font-size: 28px;
+        line-height: 30px;
+
+        margin-left: 8px;
+
+        letter-spacing: 1px;
+    }
+
+
+    header .support
+    {
+        margin-left: 30px;
+    }
+
+
+    header .support + .account
+    {
+        margin-left: 30px;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+    aside
+    {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .content + aside
+    {
+        margin-top: 40px;
+        margin-bottom: 0;
+    }
+
+
+
+    aside .links .items
+    {
+        padding-left: 0;
+
+        column-gap: 30px;
+        column-count: 4;
+    }
+
+    aside .links .items > *
+    {
+        transform: translateZ(0);
+
+        --webkit-column-break-inside: avoid;
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+
+
+    aside .reviews
+    {
+        padding: 20px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head .filter_btn
+    {
+        display: flex;
+    }
+
+
+    .page_head .catalog
+    {
+        display: none;
+    }
+
+
+    .page_head .add_ad_btn
+    {
+        height: 44px;
+    }
+
+
+    .page_head .search
+    {
+        width: 100%;
+    }
+
+    .page_head .filter_btn ~ .search
+    {
+        width: calc(100% - 60px);
+    }
+
+    .page_head .add_ad_btn ~ .search
+    {
+        width: calc(100% - 220px);
+    }
+
+    .page_head .search form .input
+    {
+        height: 44px;
+        padding-right: 86px;
+    }
+
+    .page_head .search form .submit_btn
+    {
+        right: 4px;
+
+        width: 74px;
+        height: 36px;
+
+        letter-spacing: 1px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 25px;
+    }
+
+
+    .block_head > .desc
+    {
+        margin-top: 15px;
+    }
+
+
+    .block_head .logo
+    {
+        padding-top: 6px;
+        padding-right: 35px;
+    }
+
+    .block_head .logo img
+    {
+        width: 32px;
+    }
+
+    .block_head .logo .name
+    {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .block_head .logo .desc
+    {
+        font-size: 13px;
+        line-height: 17px;
+
+        letter-spacing: 1px;
+    }
+
+
+    .block_head > .logo + .desc
+    {
+        margin-top: 8px;
+    }
+
+    .block_head > .desc
+    {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+
+    .block_head .clear_btn
+    {
+        top: 7px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .label
+    {
+        font-size: 14px;
+        line-height: 18px;
+
+        margin-bottom: 10px;
+
+        letter-spacing: 1px;
+    }
+
+
+    .form .drop_files .selected
+    {
+        margin-top: 20px;
+        margin-bottom: -20px;
+        margin-left: -20px;
+    }
+
+    .form .drop_files .selected > *
+    {
+        width: calc(16.666% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+
+    .form .submit_btn
+    {
+        height: 54px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        line-height: 26px;
+    }
+
+    .text_block h1
+    {
+        font-size: 25px;
+        line-height: 29px;
+    }
+
+
+
+    /*----------------
+        Error page
+    ----------------*/
+    .error_page .data
+    {
+        width: 100%;
+        padding: 60px;
+
+        border-radius: 28px;
+    }
+
+    .error_page .title
+    {
+        font-size: 25px;
+        line-height: 31px;
+
+        margin-top: 20px;
+    }
+
+    .error_page .desc
+    {
+        font-size: 16px;
+
+        width: 480px;
+        margin-top: 20px;
+    }
+
+    .error_page .links
+    {
+        margin-top: 25px;
+    }
+
+
+
+    /*----------
+        Auth
+    ----------*/
+    .auth .block_title
+    {
+        font-size: 28px;
+        line-height: 34px;
+
+        margin-bottom: 25px;
+    }
+
+
+    .auth .head
+    {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .auth .head .steps
+    {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+
+    .auth .data.login
+    {
+        width: 440px;
+        padding: 40px 60px;
+    }
+
+    .auth .data.login .block_title
+    {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+
+    .auth .data.recovery
+    {
+        width: 440px;
+        padding: 40px 60px;
+    }
+
+    .auth .data.recovery .block_title
+    {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+
+    .auth .data.register
+    {
+        padding: 30px;
+    }
+
+    .auth .data.register .next_step_btn
+    {
+        letter-spacing: 2px;
+    }
+
+    .auth .data.register .welcome .title
+    {
+        font-size: 25px;
+        line-height: 29px;
+    }
+
+    .auth .data.register .welcome .desc
+    {
+        font-size: 15px;
+        line-height: 21px;
+
+        margin-top: 15px;
+    }
+
+    .auth .data.register .welcome .next_step_btn
+    {
+        margin-top: 30px;
+    }
+
+
+
+    /*---------------
+        Text page
+    ---------------*/
+    .text_page .text_block
+    {
+        width: 100%;
+        padding: 34px;
+
+        border-radius: 28px;
+    }
+
+
+
+    /*-------------------
+        Contacts page
+    -------------------*/
+    .contacts_page .data
+    {
+        width: 100%;
+        padding: 30px;
+
+        border-radius: 28px;
+    }
+
+
+    .contacts_page .info
+    {
+        margin-bottom: -20px;
+        margin-left: -20px;
+    }
+
+    .contacts_page .info > *
+    {
+        font-size: 19px;
+        line-height: 23px;
+
+        max-width: calc(33.333% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+    .contacts_page .info > * .icon
+    {
+        width: 36px;
+        min-width: 36px;
+        height: 36px;
+        margin-right: 10px;
+    }
+
+
+
+    /*---------------
+        LK stocks
+    ---------------*/
+    .lk_info .stocks .stock .deposite_btn
+    {
+        margin-top: 20px;
+        padding: 12px 18px;
+    }
+
+
+
+    /*--------------
+        Learning
+    --------------*/
+    .learning .block_head > .desc
+    {
+        line-height: 20px;
+    }
+
+
+    .learning .row
+    {
+        margin-bottom: -25px;
+        margin-left: -20px;
+    }
+
+    .learning .row > *
+    {
+        width: calc(33.333% - 20px);
+        margin-bottom: 25px;
+        margin-left: 20px;
+    }
+
+
+    .learning .item
+    {
+        font-size: 15px;
+    }
+
+
+
+    /*----------------
+        LK balance
+    ----------------*/
+    .lk_info .balance .gifts .item .info .name
+    {
+        font-size: 15px;
+    }
+
+
+
+    /*------------
+        LK ads
+    ------------*/
+    .lk_info .ads .block_head .back
+    {
+        width: 100%;
+        margin-top: 8px;
+    }
+
+
+
+    /*--------------------
+        Author profile
+    --------------------*/
+    .author_profile .sticker .tooltip
+    {
+        right: 0;
+        left: auto;
+
+        transform: none;
+    }
+
+    .author_profile .sticker .tooltip:after
+    {
+        right: 15px;
+        left: auto;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding: 50px 0;
+    }
+
+
+    footer .copyright
+    {
+        width: 100%;
+        margin-top: 15px;
+
+        text-align: left;
+
+        order: 3;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .fancybox-slide--html
+    {
+        padding: 30px;
+    }
+
+
+
+    .modal
+    {
+        padding: 30px;
+    }
+
+    .modal_title
+    {
+        font-size: 22px;
+        line-height: 28px;
+
+        margin-bottom: 20px;
+    }
+
+
+
+    #city_modal .form .tips
+    {
+        margin-top: 20px;
+    }
+
+    #city_modal .form .tips > *
+    {
+        padding: 5px 0;
+    }
+
+    #city_modal .form .submit
+    {
+        padding-top: 0;
+    }
+
+    #city_modal .form .submit_btn
+    {
+        padding: 14px 20px;
+
+        letter-spacing: 1px;
+    }
+
+
+
+    .noti_modal .icon
+    {
+        margin: 0 auto 20px;
+    }
+
+    .noti_modal .desc
+    {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .noti_modal .links
+    {
+        margin-top: 25px;
+    }
+
+
+
+    #catalog_modal
+    {
+        padding: 30px;
+    }
+
+    #catalog_modal .title
+    {
+        margin-bottom: 20px;
+    }
+
+    #catalog_modal .category .links
+    {
+        margin-left: -30px;
+    }
+
+    #catalog_modal .category .links > *
+    {
+        width: calc(33.333% - 30px);
+        margin-left: 30px;
+    }
+
+    #catalog_modal .category .name
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    #catalog_modal .category .col > * + *
+    {
+        margin-top: 8px;
+    }
+
+
+
+    #ad_phone_modal .phone
+    {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+
+
+    .ad_up_modal .icon
+    {
+        margin-bottom: 20px;
+    }
+
+    .ad_up_modal .title
+    {
+        font-size: 19px;
+        line-height: 27px;
+    }
+
+    .ad_up_modal .links
+    {
+        margin-top: 20px;
+    }
+}

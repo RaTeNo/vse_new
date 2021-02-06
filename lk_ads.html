@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Традиционная иконка сайта, размер 16x16, прозрачность поддерживается. Рекомендуемый формат: .ico или .png -->
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#f76b1c">
+		<meta name="theme-color" content="#f76b1c">
+
+		<!-- Подключение шрифтов с гугла -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/swiper.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<link rel="stylesheet" href="css/response_1159.css" media="print, (max-width: 1159px)">
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)">
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)">
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<button class="close">
+						<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+					</button>
+
+					<div class="mob_scroll">
+						<div class="cont row">
+							<div class="logo">
+								<a href="/">
+									<div class="name">ВСЕ.РФ</div>
+									<div class="desc">БИРЖА УСЛУГ</div>
+									<img data-src="images/logo.svg" alt="" class="lozad">
+								</a>
+							</div>
+
+							<div class="city">
+								<button class="btn modal_link" data-content="#city_modal">
+									<span>Волжский</span>
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_down"></use></svg>
+								</button>
+							</div>
+
+							<div class="balance">
+								<span>БАЛАНС:</span> <b>0 ₽</b>
+							</div>
+
+							<div class="support">
+								<a href="/">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_support"></use></svg>
+									<span class="count">3</span>
+								</a>
+							</div>
+
+							<div class="account">
+								<a href="/" class="profile">
+									<div class="avatar">
+										<img data-src="images/tmp/user_photo.jpg" alt="" class="lozad">
+									</div>
+
+									<span>ПРОФИЛЬ</span>
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_down"></use></svg>
+								</a>
+
+								<div class="dropdown">
+									<div><a href="/">Моя страница</a></div>
+									<div><a href="/">Личный кабинет</a></div>
+									<div><a href="/">Ховер</a></div>
+									<div><a href="/">Мои объявления</a></div>
+									<div><a href="/">Выход</a></div>
+								</div>
+							</div>
+
+							<div class="mob_menu">
+								<div><a href="/">Моя страница</a></div>
+								<div><a href="/">Личный кабинет</a></div>
+								<div><a href="/">Ховер</a></div>
+								<div><a href="/">Мои объявления</a></div>
+								<div><a href="/">Выход</a></div>
+							</div>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="mob_header">
+					<div class="cont">
+						<div class="logo">
+							<a href="/">
+								<div class="name">ВСЕ.РФ</div>
+								<div class="desc">БИРЖА УСЛУГ</div>
+								<img data-src="images/logo.svg" alt="" class="lozad">
+							</a>
+						</div>
+
+						<div class="support">
+							<a href="/">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_support"></use></svg>
+								<span class="count">3</span>
+							</a>
+						</div>
+
+						<button class="mob_menu_btn">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
+						</button>
+					</div>
+				</section>
+
+
+				<section class="content_flex block">
+					<div class="cont row">
+						<aside>
+							<div class="links">
+								<div class="title">
+									<a href="/">Личный кабинет</a>
+								</div>
+
+								<div class="items">
+									<div><a href="/">Фото профиля</a></div>
+									<div><a class="active">Объявления</a></div>
+									<div><a href="/">Баланс: 0 ₽</a></div>
+									<div><a href="/">Продвижение</a></div>
+									<div><a href="/">Чат с Поддержкой</a></div>
+									<div><a href="/">Обучение</a></div>
+									<div><a href="/">Для организаций</a></div>
+								</div>
+							</div>
+						</aside>
+
+
+						<section class="content">
+							<section class="lk_info">
+								<div class="data">
+									<section class="ads tabs_container">
+										<div class="block_head">
+											<h1 class="title">Объявления</h1>
+
+											<div class="count">Осталось: 5 из 7</div>
+
+											<a href="/" class="limit_btn">Увеличить Лимит</a>
+
+											<div class="back">
+												<a href="/">
+													<img data-src="images/ic_back_arr.svg" alt="" class="lozad">
+													<span>Вернуться в Личный Кабинет</span>
+												</a>
+											</div>
+										</div>
+
+
+										<div class="tabs">
+											<button data-content="#ads_tab1" data-level="level1" class="active">
+												Активные <span>3</span>
+											</button>
+
+											<button data-content="#ads_tab2" data-level="level1">
+												На модерации <span>3</span>
+											</button>
+
+											<button data-content="#ads_tab3" data-level="level1">
+												Заблокировано <span>3</span>
+											</button>
+
+											<button data-content="#ads_tab4" data-level="level1">
+												Закончился срок <span>3</span>
+											</button>
+										</div>
+
+
+										<div class="tab_content level1 active" id="ads_tab1">
+											<div class="section">
+												<div class="head">
+													<div class="title">Услуги</div>
+
+													<div class="sort">
+														<div class="name">Порядок в профиле</div>
+														<select name="">
+															<option value="1" selected>1</option>
+															<option value="2">2</option>
+															<option value="3">3</option>
+														</select>
+													</div>
+												</div>
+
+
+												<div class="list">
+													<div class="service">
+														<div class="col_left">
+															<div class="thumb">
+																<svg class="icon"><use xlink:href="images/sprite.svg#ic_empty_image"></use></svg>
+															</div>
+
+															<div class="duration green">ОСТАЛОСЬ 7 ДНЕЙ</div>
+														</div>
+
+														<div class="col_right">
+															<div class="name">Уборка вашей квартиры круглосуточно, без выходных</div>
+
+															<div class="price">по договоренности</div>
+
+															<div class="category">Уборка помещений</div>
+
+															<div class="links">
+																<a href="/" class="edit_link">Редактировать</a>
+																<a href="/" class="delete_link">Удалить</a>
+																<a href="/" class="hide_link">Скрыть</a>
+															</div>
+
+															<div class="city">г. Комсомольск-на-Амуре</div>
+
+															<div class="rating">
+																<div>1 место в рейтинге</div>
+																<button class="up_btn" disabled>
+																	<svg class="icon"><use xlink:href="images/sprite.svg#ic_profile_promotion"></use></svg>
+																</button>
+															</div>
+														</div>
+													</div>
+
+
+													<div class="service">
+														<div class="col_left">
+															<div class="thumb">
+																<svg class="icon"><use xlink:href="images/sprite.svg#ic_empty_image"></use></svg>
+															</div>
+
+															<div class="duration green">ОСТАЛОСЬ 999 ДНЕЙ</div>
+														</div>
+
+														<div class="col_right">
+															<div class="name">Уборка вашей квартиры</div>
+
+															<div class="price">по договоренности</div>
+
+															<div class="category">Уборка помещений</div>
+
+															<div class="links">
+																<a href="/" class="edit_link">Редактировать</a>
+																<a href="/" class="delete_link">Удалить</a>
+																<a href="/" class="hide_link">Скрыть</a>
+															</div>
+
+															<div class="city">г. Комсомольск-на-Амуре</div>
+
+															<div class="rating">
+																<div>35 место в рейтинге</div>
+																<button class="up_btn modal_link" data-content="#ad_up_modal">
+																	<svg class="icon"><use xlink:href="images/sprite.svg#ic_profile_promotion"></use></svg>
+																</button>
+															</div>
+														</div>
+													</div>
+
+
+													<div class="service">
+														<div class="col_left">
+															<div class="thumb">
+																<svg class="icon"><use xlink:href="images/sprite.svg#ic_empty_image"></use></svg>
+															</div>
+
+															<div class="duration grey">ЗАКОНЧИЛСЯ СРОК</div>
+														</div>
+
+														<div class="col_right">
+															<div class="name">Уборка вашей квартиры круглосуточно, без выходных</div>
+
+															<div class="price">по договоренности</div>
+
+															<div class="category">Уборка помещений</div>
+
+															<div class="links">
+																<a href="/" class="edit_link">Редактировать</a>
+																<a href="/" class="delete_link">Удалить</a>
+																<a href="/" class="hide_link">Скрыть</a>
+																<a href="/" class="recover_link">Восстановить</a>
+															</div>
+
+															<div class="city">г. Комсомольск-на-Амуре</div>
+
+															<div class="rating">
+																<div>35 место в рейтинге</div>
+																<button class="up_btn modal_link" data-content="#ad_up_modal2">
+																	<svg class="icon"><use xlink:href="images/sprite.svg#ic_profile_promotion"></use></svg>
+																</button>
+															</div>
+														</div>
+													</div>
+
+
+													<div class="service">
+														<div class="col_left">
+															<div class="thumb">
+																<svg class="icon"><use xlink:href="images/sprite.svg#ic_empty_image"></use></svg>
+															</div>
+
+															<div class="duration red">ЗАБЛОКИРОВАНО</div>
+														</div>
+
+														<div class="col_right">
+															<div class="name">Уборка вашей квартиры круглосуточно, без выходных</div>
+
+															<div class="price">по договоренности</div>
+
+															<div class="category">Уборка помещений</div>
+
+															<div class="links">
+																<a href="/" class="edit_link">Редактировать</a>
+																<a href="/" class="delete_link">Удалить</a>
+																<a href="/" class="hide_link">Скрыть</a>
+																<a href="/" class="recover_link">Восстановить</a>
+															</div>
+
+															<div class="city">г. Комсомольск-на-Амуре</div>
+
+															<div class="rating">
+																<div>35 место в рейтинге</div>
+																<button class="up_btn modal_link" data-content="#ad_up_modal3">
+																	<svg class="icon"><use xlink:href="images/sprite.svg#ic_profile_promotion"></use></svg>
+																</button>
+															</div>
+														</div>
+													</div>
+
+
+													<div class="service">
+														<div class="col_left">
+															<div class="thumb">
+																<svg class="icon"><use xlink:href="images/sprite.svg#ic_empty_image"></use></svg>
+															</div>
+
+															<div class="duration orange">НА МОДЕРАЦИИ</div>
+														</div>
+
+														<div class="col_right">
+															<div class="name">Уборка вашей квартиры круглосуточно, без выходных</div>
+
+															<div class="price">по договоренности</div>
+
+															<div class="category">Уборка помещений</div>
+
+															<div class="links">
+																<a href="/" class="edit_link">Редактировать</a>
+																<a href="/" class="delete_link">Удалить</a>
+																<a href="/" class="hide_link">Скрыть</a>
+																<a href="/" class="recover_link">Восстановить</a>
+															</div>
+
+															<div class="city">г. Комсомольск-на-Амуре</div>
+
+															<div class="rating">
+																<div>35 место в рейтинге</div>
+																<button class="up_btn modal_link" data-content="#ad_up_modal4">
+																	<svg class="icon"><use xlink:href="images/sprite.svg#ic_profile_promotion"></use></svg>
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+
+											<div class="section">
+												<div class="head">
+													<div class="title">Транспорт</div>
+
+													<div class="sort">
+														<div class="name">Порядок в профиле</div>
+														<select name="">
+															<option value="1">1</option>
+															<option value="2" selected>2</option>
+															<option value="3">3</option>
+														</select>
+													</div>
+												</div>
+
+
+												<div class="list">
+													<div class="service hidden">
+														<div class="col_left">
+															<div class="thumb">
+																<svg class="icon"><use xlink:href="images/sprite.svg#ic_empty_image"></use></svg>
+															</div>
+
+															<div class="duration grey">СКРЫТОЕ</div>
+														</div>
+
+														<div class="col_right">
+															<div class="name">Уборка вашей квартиры круглосуточно, без выходных</div>
+
+															<div class="price">по договоренности</div>
+
+															<div class="category">Уборка помещений</div>
+
+															<div class="links">
+																<a href="/" class="edit_link">Редактировать</a>
+																<a href="/" class="delete_link">Удалить</a>
+																<a href="/" class="show_link">Показать</a>
+															</div>
+
+															<div class="city">г. Комсомольск-на-Амуре</div>
+
+															<div class="rating">
+																<div>1 место в рейтинге</div>
+																<button class="up_btn">
+																	<svg class="icon"><use xlink:href="images/sprite.svg#ic_profile_promotion"></use></svg>
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+
+											<div class="bottom">
+												<button class="save_btn">
+													<span>СОХРАНИТЬ</span>
+												</button>
+
+												<a href="/" class="add_link">ДОБАВИТЬ ОБЪЯВЛЕНИЕ</a>
+											</div>
+										</div>
+
+
+										<div class="tab_content level1" id="ads_tab2">
+
+										</div>
+
+
+										<div class="tab_content level1" id="ads_tab3">
+
+										</div>
+
+
+										<div class="tab_content level1" id="ads_tab4">
+
+										</div>
+									</section>
+								</div>
+							</section>
+						</section>
+					</div>
+				</section>
+			</div>
+
+
+			<footer>
+				<div class="cont row">
+					<div class="logo">
+						<div>
+							<div class="name">ВСЕ.РФ</div>
+							<div class="desc">БИРЖА УСЛУГ</div>
+							<img data-src="images/logo.svg" alt="" class="lozad">
+						</div>
+					</div>
+
+					<div class="copyright">Copyright &copy; 2020 Все.Рф Все права защищены</div>
+
+					<div class="links">
+						<div><a href="/">Правила сервиса</a></div>
+						<div><a href="/">Политика конфедициальности</a></div>
+						<div><a href="/">Контакты</a></div>
+					</div>
+				</div>
+			</footer>
+
+
+			<div class="overlay"></div>
+		</div>
+
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<div class="buttonUp">
+			<button>
+				<img data-src="images/ic_buttonUp.svg" alt="" class="lozad">
+			</button>
+		</div>
+
+
+		<section class="modal" id="city_modal">
+			<div class="modal_title">Выберите город</div>
+
+			<div class="modal_data">
+				<form action="" class="form">
+					<div class="line no_margin">
+						<div class="field">
+							<input type="text" name="" value="" class="input" placeholder="Введите город">
+						</div>
+
+						<div class="field tips">
+							<div><a href="/">Москва</a></div>
+							<div><a href="/">Санкт-Петербург</a></div>
+							<div><a href="/">Волгоград</a></div>
+							<div><a href="/">Самара</a></div>
+							<div><a href="/" class="active">Волжский</a></div>
+							<div><a href="/">Екатеринбург</a></div>
+							<div><a href="/">Нижний Новгородк</a></div>
+							<div><a href="/">Москва</a></div>
+							<div><a href="/">Санкт-Петербург</a></div>
+							<div><a href="/">Волгоград</a></div>
+							<div><a href="/">Самара</a></div>
+							<div><a href="/">Волжский</a></div>
+							<div><a href="/">Екатеринбург</a></div>
+							<div><a href="/">Нижний Новгородк</a></div>
+						</div>
+					</div>
+
+					<div class="submit">
+						<button type="button" class="submit_btn close">ПОКАЗАТЬ ОБЪЯВЛЕНИЯ В <span>ВОЛЖСКОМ</span></button>
+					</div>
+				</form>
+			</div>
+		</section>
+
+
+		<section class="modal ad_up_modal" id="ad_up_modal">
+			<div class="icon red">
+				<svg class="service1"><use xlink:href="images/sprite.svg#ic_service1"></use></svg>
+			</div>
+
+			<div class="title">Вы хотите поднять объявление на первое место за 199₽ ?</div>
+
+			<div class="links">
+				<button class="buy_btn">КУПИТЬ</button>
+
+				<button class="cancel_btn close"><span>ОТМЕНА</span></button>
+			</div>
+		</section>
+
+
+		<section class="modal ad_up_modal" id="ad_up_modal2">
+			<div class="icon blue">
+				<svg class="service2"><use xlink:href="images/sprite.svg#ic_service2"></use></svg>
+			</div>
+
+			<div class="title">Вы хотите поднять объявление на первое место за 199₽ ?</div>
+
+			<div class="links">
+				<button class="buy_btn">КУПИТЬ</button>
+
+				<button class="cancel_btn close"><span>ОТМЕНА</span></button>
+			</div>
+		</section>
+
+
+		<section class="modal ad_up_modal" id="ad_up_modal3">
+			<div class="icon purple">
+				<svg class="service1"><use xlink:href="images/sprite.svg#ic_service3"></use></svg>
+			</div>
+
+			<div class="title">Вы хотите поднять объявление на первое место за 199₽ ?</div>
+
+			<div class="links">
+				<button class="buy_btn">КУПИТЬ</button>
+
+				<button class="cancel_btn close"><span>ОТМЕНА</span></button>
+			</div>
+		</section>
+
+
+		<section class="modal ad_up_modal" id="ad_up_modal4">
+			<div class="icon green">
+				<svg class="service1"><use xlink:href="images/sprite.svg#ic_service4"></use></svg>
+			</div>
+
+			<div class="title">Вы хотите поднять объявление на первое место за 199₽ ?</div>
+
+			<div class="links">
+				<button class="buy_btn">КУПИТЬ</button>
+
+				<button class="cancel_btn close"><span>ОТМЕНА</span></button>
+			</div>
+		</section>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/lozad.min.js"></script>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="js/inputmask.min.js"></script>
+		<script src="js/nice-select.js"></script>
+		<script src="js/fancybox.min.js"></script>
+		<script src="js/clipboard.min.js"></script>
+		<script src="js/countdown.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

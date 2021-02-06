@@ -1,0 +1,875 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_title: 24px;
+    }
+
+
+    .block
+    {
+        margin-bottom: 50px;
+    }
+
+
+
+    /*----------------
+        Pagination
+    ----------------*/
+    .pagination
+    {
+        font-size: 14px;
+        line-height: 32px;
+    }
+
+    .pagination a,
+    .pagination .sep
+    {
+        width: 32px;
+        height: 32px;
+    }
+
+    .pagination .prev
+    {
+        margin-right: 10px;
+    }
+
+    .pagination .next
+    {
+        margin-left: 10px;
+    }
+
+
+    .pagination.small
+    {
+        margin-top: 20px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+    aside .links .items
+    {
+        column-gap: 20px;
+        column-count: 2;
+    }
+
+
+    aside .location .address
+    {
+        font-size: 15px;
+
+        margin-top: 15px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head .logo
+    {
+        padding-top: 4px;
+        padding-right: 30px;
+    }
+
+    .block_head .logo img
+    {
+        width: 27px;
+    }
+
+    .block_head .logo .name
+    {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .block_head .logo .desc
+    {
+        font-size: 12px;
+        line-height: 16px;
+
+        letter-spacing: 0;
+    }
+
+
+    .block_head > .desc
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+    .block_head .link
+    {
+        width: 100%;
+        margin-top: 10px;
+
+        text-align: center;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .line.no_margin
+    {
+        margin-bottom: 20px;
+    }
+
+    .form .label
+    {
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+    .form .input
+    {
+        font-size: 15px;
+
+        height: 51px;
+        padding: 0 15px;
+    }
+
+    .form textarea
+    {
+        font-size: 15px;
+
+        height: 180px;
+        padding: 15px;
+    }
+
+    .form .nice-select .current
+    {
+        font-size: 15px;
+        line-height: 49px;
+
+        height: 51px;
+        padding: 0 41px 0 15px;
+    }
+
+    .form .nice-select .list .list_item
+    {
+        font-size: 15px;
+        line-height: 19px;
+
+        padding: 7px 15px;
+    }
+
+    .form .remember
+    {
+        padding-top: 0;
+    }
+
+    .form input[type=checkbox] + label
+    {
+        font-size: 15px;
+        line-height: 19px;
+
+        padding-left: 42px;
+    }
+
+    .form .submit_btn
+    {
+        font-size: 15px;
+        line-height: 19px;
+
+        height: 51px;
+
+        letter-spacing: 2px;
+    }
+
+
+    .form .attachment
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+
+    .form .bottom .submit
+    {
+        width: 100%;
+    }
+
+
+    .form .drop_files .selected > *
+    {
+        width: calc(33.333% - 20px);
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+
+
+
+    /*----------------
+        Error page
+    ----------------*/
+    .error_page .data
+    {
+        padding: 30px;
+    }
+
+    .error_page .desc
+    {
+        margin-top: 15px;
+    }
+
+
+
+    /*----------
+        Auth
+    ----------*/
+    .auth .block_title
+    {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+
+    .auth .head
+    {
+        margin-bottom: 20px;
+    }
+
+    .auth .head .steps
+    {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+
+    .auth .data.login
+    {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .auth .data.login .block_title
+    {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+
+    .auth .data.recovery
+    {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .auth .data.recovery .block_title
+    {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+
+    .auth .data.register .welcome .title
+    {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+
+    .auth .data.register .phone_code .change_code_btn
+    {
+        font-size: 14px;
+        line-height: 18px;
+
+        position: relative;
+        right: 0;
+        bottom: 0;
+
+        margin-top: -15px;
+        margin-bottom: 20px;
+    }
+
+
+    .auth .data.register .phone_code .row > *
+    {
+        width: 100%;
+    }
+
+
+    .auth .data.register .finish .start_link
+    {
+        width: 100%;
+        margin-top: 20px;
+
+        text-align: center;
+    }
+
+
+    .auth .form .error_text
+    {
+        font-size: 14px;
+        line-height: 18px;
+
+        margin: -10px 0 20px;
+    }
+
+
+
+    /*---------------
+        Text page
+    ---------------*/
+    .text_page .text_block
+    {
+        width: calc(100% + 40px);
+        max-width: calc(100% + 40px);
+        margin-right: -20px;
+        margin-left: -20px;
+        padding: 25px 20px;
+
+        border-radius: 0;
+    }
+
+
+
+    /*-------------------
+        Contacts page
+    -------------------*/
+    .contacts_page .data
+    {
+        width: calc(100% + 40px);
+        max-width: calc(100% + 40px);
+        margin-right: -20px;
+        margin-left: -20px;
+        padding: 25px 20px;
+
+        border-radius: 0;
+    }
+
+
+
+    /*-------------
+        LK info
+    -------------*/
+    .lk_info .data
+    {
+        width: calc(100% + 40px);
+        max-width: calc(100% + 40px);
+        margin-right: -20px;
+        margin-left: -20px;
+        padding: 25px 20px;
+
+        border-radius: 0;
+    }
+
+
+
+    /*---------------
+        LK stocks
+    ---------------*/
+    .lk_info .stocks .stock .features
+    {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .lk_info .stocks .stock .features .price
+    {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .lk_info .stocks .stock .deposite_btn
+    {
+        margin-top: 15px;
+        padding: 10px 16px;
+    }
+
+
+
+    /*-------------
+        Profile
+    -------------*/
+    .profile .item > .icon
+    {
+        margin: 0 auto 15px;
+        padding: 10px;
+    }
+
+    .profile .item .info,
+    .profile .item .info.full,
+    .profile .item.support .info
+    {
+        width: 100%;
+        max-width: 100%;
+
+        text-align: center;
+    }
+
+    .profile .item .info .exp
+    {
+        width: 114px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .profile .ratings .item .info .exp
+    {
+        width: 100%;
+    }
+
+    .profile .item .info .success
+    {
+        line-height: 23px;
+
+        display: inline-block;
+
+        width: auto;
+
+        vertical-align: top;
+    }
+
+    .profile .item.support .count
+    {
+        position: absolute;
+        right: 14px;
+        bottom: 14px;
+
+        margin: 0;
+    }
+
+    .profile .item .link
+    {
+        margin: 20px auto 0;
+    }
+
+
+    .see_profile .btn
+    {
+        font-size: 13px;
+        line-height: 15px;
+
+        letter-spacing: 1px;
+    }
+
+
+
+    /*------------
+        LK ads
+    ------------*/
+    .lk_info .ads .count
+    {
+        font-size: 15px;
+    }
+
+
+    .lk_info .ads .head .sort .name
+    {
+        font-size: 14px;
+        line-height: 18px;
+
+        margin-right: 10px;
+    }
+
+
+    .lk_info .ads .bottom .save_btn
+    {
+        width: 100%;
+    }
+
+    .lk_info .ads .bottom .add_link
+    {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+
+
+    /*--------------------------
+        LK for organizations
+    --------------------------*/
+    .lk_info .we_organization
+    {
+        margin-bottom: 25px;
+        padding: 20px;
+
+        text-align: center;
+    }
+
+    .lk_info .we_organization .icon
+    {
+        margin: 0 auto 15px;
+    }
+
+    .lk_info .we_organization .info
+    {
+        width: 100%;
+    }
+
+
+    .lk_info .for_organizations .passport .mark
+    {
+        font-size: 12px;
+    }
+
+
+    .lk_info .for_organizations .form .bottom .submit_btn
+    {
+        width: 100%;
+    }
+
+
+
+    /*------------------
+        Ads category
+    ------------------*/
+    .ads_category .map_btn
+    {
+        height: 140px;
+        padding: 20px;
+    }
+
+    .ads_category .map_btn .btn
+    {
+        font-size: 12px;
+
+        padding: 13px 26px;
+
+        letter-spacing: 1px;
+    }
+
+
+    .ads_category .row
+    {
+        --ads_count: 1;
+    }
+
+    .ads_category .row > *
+    {
+        width: calc(100% - 20px);
+    }
+
+
+    .ads_category .ad
+    {
+        display: flex;
+
+        justify-content: space-between;
+        align-items: stretch;
+        align-content: stretch;
+        flex-wrap: wrap;
+    }
+
+    .ads_category .ad .thumb
+    {
+        width: calc(40% + 1px);
+        margin: -1px 0 -1px -1px;
+        padding-bottom: calc(40% + 1px);
+
+        border-radius: 20px 0 0 20px;
+    }
+
+    .ads_category .ad.recommend .thumb
+    {
+        width: calc(40% + 2px);
+        margin: -2px 0 -2px -2px;
+        padding-bottom: calc(40% + 2px);
+    }
+
+
+    .ads_category .ad .head
+    {
+        width: calc(40% + 1px);
+        padding: 6px 10px;
+    }
+
+    .ads_category .ad .head .links
+    {
+        margin-top: 6px;
+    }
+
+
+    .ads_category .ad .info
+    {
+        width: 60%;
+        padding: 14px;
+    }
+
+
+
+    .ads_category .add_ad_link
+    {
+        padding: 25px 20px;
+    }
+
+
+
+    /*--------------------
+        Author profile
+    --------------------*/
+    .author_profile .name
+    {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+
+    .author_profile .bottom
+    {
+        justify-content: center;
+    }
+
+
+    .author_profile .share
+    {
+        width: 100%;
+        margin-top: 15px;
+
+        justify-content: center;
+    }
+
+
+    .author_profile .other_services a
+    {
+        padding: 5px 9px;
+    }
+
+
+    .author_profile .phone_btn
+    {
+        width: 100%;
+    }
+
+
+    .author_profile .messengers,
+    .author_profile .site
+    {
+        margin: 12px 8px 0;
+    }
+
+    .author_profile .messengers .btn span,
+    .author_profile .site a span
+    {
+        padding: 12px 28px;
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews .pagination .prev,
+    .reviews .pagination .next
+    {
+        display: none;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .links
+    {
+        width: 100%;
+        margin-top: 15px;
+
+        text-align: left;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .fancybox-slide--html
+    {
+        padding: 12px;
+    }
+
+    .fancybox-slide--html .fancybox-close-small
+    {
+        top: 15px;
+        right: 15px;
+    }
+
+
+    .modal
+    {
+        padding: 25px;
+
+        border-radius: 22px;
+    }
+
+
+    #catalog_modal
+    {
+        padding: 20px;
+    }
+
+    #catalog_modal .category .links
+    {
+        margin-left: -20px;
+    }
+
+    #catalog_modal .category .links > *
+    {
+        width: calc(100% - 20px);
+        margin-left: 20px;
+    }
+
+
+
+    #ad_phone_modal
+    {
+        padding: 25px;
+    }
+
+    #ad_phone_modal .phone
+    {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+
+
+    .modal .related_ads .block_head .title.mini
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .modal .related_ads
+    {
+        width: calc(100% + 50px);
+        margin: 25px -25px 0;
+        padding: 20px 25px 12px;
+    }
+
+    .modal .related_ads .ad.recommend
+    {
+        padding: 10px;
+    }
+
+
+
+    #ad_info_modal
+    {
+        padding: 20px;
+    }
+
+    #ad_info_modal ~ .fancybox-close-small
+    {
+        top: 0;
+        right: 0;
+    }
+
+    #ad_info_modal .head .title
+    {
+        font-size: 20px;
+        line-height: 24px;
+
+        padding-right: 20px;
+    }
+
+    #ad_info_modal .head .views
+    {
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    #ad_info_modal .gallery .slide
+    {
+        width: 100px;
+    }
+
+    #ad_info_modal .phone_btn
+    {
+        width: 100%;
+        padding: 12px 20px;
+    }
+
+    #ad_info_modal .profile_link
+    {
+        width: 100%;
+        margin-left: 0;
+
+        text-align: center;
+    }
+
+
+    #ad_info_modal .related_ads
+    {
+        width: calc(100% + 40px);
+        margin: 25px -20px 0;
+        padding: 20px 20px 12px;
+    }
+
+
+
+    .ad_up_modal .title
+    {
+        font-size: 17px;
+        line-height: 23px;
+    }
+
+
+    .ad_up_modal .links .buy_btn,
+    .ad_up_modal .links .cancel_btn
+    {
+        width: auto;
+    }
+
+
+
+    .buy_service_modal .form .place .label
+    {
+        max-width: calc(100% - 97px);
+        margin: 0 15px 0 0;
+    }
+
+
+
+    .modal .related_ads .list .ad .thumb
+    {
+        margin-bottom: 15px;
+    }
+
+    .modal .related_ads .list .ad .thumb + .info
+    {
+        width: 100%;
+        padding: 0;
+    }
+
+    .modal .related_ads .list .ad .phone
+    {
+        font-size: 20px !important;
+        line-height: 24px !important;
+    }
+
+
+
+    #map_modal .map_wrap
+    {
+        height: 480px;
+        padding-bottom: 0;
+    }
+}
