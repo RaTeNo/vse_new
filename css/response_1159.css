@@ -24,6 +24,12 @@
     }
 
 
+    .swiper-pagination-bullet:before
+    {
+        display: none;
+    }
+
+
 
     /*----------------
         Pagination

@@ -251,7 +251,7 @@ $(() => {
 			swiperSliders = new Swiper('.ads_category .ad .swiper-container', {
 				loop: true,
 				speed: 500,
-				watchSlidesVisibility: true,
+				// watchSlidesVisibility: true,
 				slideActiveClass: 'active',
 				slideVisibleClass: 'visible',
 				spaceBetween: 0,
@@ -261,15 +261,25 @@ $(() => {
 					type: 'bullets',
 					bulletActiveClass: 'active'
 				},
+				breakpoints: {
+					0: {
+						allowTouchMove: true
+					},
+					1024: {
+						allowTouchMove: false
+					}
+				},
 				on: {
 					init: swiper => {
 						setTimeout(() => {
 							$(swiper.$el).find('.swiper-pagination-bullet').attr('data-slider', i)
 							i++
 
-							$('.swiper-pagination-bullet').on('mouseover', function () {
-								swiperSliders[parseInt($(this).data('slider'))].slideTo($(this).index() + 1)
-							})
+							if (!is_touch_device()) {
+								$('.swiper-pagination-bullet').on('mouseover', function () {
+									swiperSliders[parseInt($(this).data('slider'))].slideTo($(this).index() + 1)
+								})
+							}
 						})
 					}
 				}
