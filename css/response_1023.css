@@ -716,4 +716,13 @@
     {
         margin-top: 20px;
     }
+
+    .one_line{
+        display: block;
+    }
+
+    .form .one_line .field:not(:first-child){
+        margin-left:0px;
+        margin-top:15px;
+    }
 }
