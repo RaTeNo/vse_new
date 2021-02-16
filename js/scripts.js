@@ -120,7 +120,7 @@ $(() => {
 
 
 	// Боковая колонка - Категории
-	$('aside .categories .sub_link').click(function (e) {
+	/*$('aside .categories .sub_link').click(function (e) {
 		e.preventDefault()
 
 		let parent = $(this).parent().parent()
@@ -134,7 +134,7 @@ $(() => {
 
 			$(this).addClass('active').next().slideDown(300)
 		}
-	})
+	})*/
 
 
 	// Боковая колонка - Спойлер в категориях
