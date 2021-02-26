@@ -59,7 +59,7 @@
 							</div>
 
 							<div class="account">
-								<div><a href="/">ВОЙТИ</a></div>
+								<div><a class="modal_link" data-content="#register">ВОЙТИ</a></div>
 								<div><a href="/">РЕГИСТРАЦИЯ</a></div>
 							</div>
 
@@ -223,6 +223,61 @@
 				</form>
 			</div>
 		</section>
+
+
+		<section class="modal" id="register">
+			<div class="modal_title">Войдите, чтобы продолжить</div>
+
+			<div class="modal_data auth">
+				<form action="" class="form">
+
+					<div class="line">
+						<div class="label">ТЕЛЕФОН*</div>
+
+						<div class="field">
+							<input type="tel" name="" value="" class="input" placeholder="+7912312354">
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="label">ПАРОЛЬ</div>
+
+						<div class="field">
+							<input type="password" name="" value="" class="input" placeholder="************">
+						</div>
+					</div>
+
+					<div class="line remember">
+						<div class="field">
+							<input type="checkbox" name="remember" id="remember_check" checked>
+							<label for="remember_check">Запомнить меня</label>
+						</div>
+					</div>
+
+					<div class="line captcha">
+						<div class="field">
+							<img src="images/tmp/captcha_img.png" alt="">
+						</div>
+					</div>
+
+
+					<div class="submit">
+						<button type="submit" class="submit_btn">ВОЙТИ</button>
+					</div>
+				</form>
+
+				<div class="links">
+					<a href="/">Забыл пароль</a>
+				</div>
+
+				<div class="not_acount">
+					У вас нет аккаунта? <a href="">Зарегистрироваться</a>
+				</div>
+			</div>
+		</section>
+
+
+
 
 
 		<!-- Подключение javascript файлов -->

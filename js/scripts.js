@@ -1,10 +1,35 @@
 $(() => {
-	// Выбор города
+
 	$('header .city .mini_modal .btn.yes').click(function (e) {
 		e.preventDefault()
 
 		$('header .city .mini_modal').fadeOut(200)
 	})
+
+	$('header .city .mini_modal .btn.yes').click(function (e) {
+		e.preventDefault()
+
+		$('header .city .mini_modal').fadeOut(200)
+	})
+
+	$('.step_1 button').click(function (e) {
+		e.preventDefault()
+		$('.step_1').hide();
+		$('.step_2').show();
+	});
+
+	$('.step_2 button').click(function (e) {
+		e.preventDefault()
+		$('.step_2').hide();
+		$('.step_3').show();
+	});
+	
+	// Выбор города
+	/*$('.js-open-change-password').click(function (e) {
+		e.preventDefault()
+		$(this).hide();
+		$(".js-change-password").removeClass("close");		
+	})*/
 
 	// Выбор города - Поиск
 	$('#city_modal .form .input').keydown(function (e) {

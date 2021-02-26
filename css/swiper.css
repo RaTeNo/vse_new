@@ -129,3 +129,9 @@
 {
     margin: 0;
 }
+
+
+.orange .swiper-pagination-bullet:hover, .orange  .swiper-pagination-bullet.active {
+    opacity: 1;
+    background: #fff;
+}

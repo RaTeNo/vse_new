@@ -7591,6 +7591,17 @@ aside .hide_ad_btn:hover
     box-shadow: none;
 }
 
+.ads_category .ad.orange{
+    background: linear-gradient(180deg, #FF954D 0%, #FB6600 100%);
+}
+
+.ads_category .ad.orange .name,
+.ads_category .ad.orange .price,
+.ads_category .ad.orange .location,
+.ads_category .ad.orange .date{
+    color:#fff;
+    -webkit-text-fill-color: #ffffff;;
+}
 
 .ads_category .ad .position
 {
@@ -8814,7 +8825,6 @@ aside .hide_ad_btn:hover
 
     display: none;
 
-    width: 208px;
     padding: 10px 14px;
 
     transform: translateX(-50%);
@@ -8827,7 +8837,6 @@ aside .hide_ad_btn:hover
     justify-content: space-around;
     align-items: center;
     align-content: center;
-    flex-wrap: wrap;
 }
 
 .author_profile .messengers .dropdown:after
@@ -8869,6 +8878,7 @@ aside .hide_ad_btn:hover
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
+    margin:0 10px;
 }
 
 .author_profile .messengers .dropdown a.whatsapp
@@ -11572,4 +11582,342 @@ footer .links a:hover
 
 .form .one_line .field:not(:first-child){
     margin-left:20px;
+}
+
+.edit_review{
+    color:#F77F29;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-orange{
+    color: #fff;
+    font: 700 16px/19px var(--font_family);
+    display: inline-block;
+    height: 61px;
+    padding: 0 25px;
+    cursor: pointer;
+    transition: box-shadow .2s linear;
+    vertical-align: top;
+    letter-spacing: 2.53333px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 29.7488px;
+    background: linear-gradient(198.85deg, #fad961 -34.64%, #f76b1c 87.28%);
+    box-shadow: 0 17px 31px rgb(231 95 39 / 41%);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 30px;
+    height: auto;
+    padding: 7px 30px;
+    letter-spacing: 1.9px;
+}
+
+.js-change-password.close{
+    display: none;
+}
+
+
+.suggestions-suggestions{
+    border: 2px solid #CCCCCC;
+    box-sizing: border-box;
+    box-shadow: 0px 17px 37px rgb(0 0 0 / 16%);
+    border-radius: 19px;
+    margin-top: 10px;
+}
+
+.suggestions-suggestions div {
+    padding: 16px;
+    border-bottom:0px;
+}
+
+.suggestions-promo{
+    display: none !important;
+}
+
+.you_show{
+
+}
+
+
+.you_show .list_show{
+    
+}
+
+.you_show .list_show .ad_show{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+    flex-wrap: wrap;
+        border: 1px solid #e3e3e3;
+    border-radius: 20px;
+    box-shadow: 0 23px 39px rgb(188 188 188 / 55%);
+    margin-bottom: 20px;
+}
+.you_show .list_show .ad_show .thumb{
+    overflow: hidden;
+    transform: translateZ(0);
+    background: #e3e3e3;
+    width: calc(30% + 1px);
+    margin: -1px 0 -1px -1px;
+    padding-bottom: calc(30% + 1px);
+    border-radius: 20px 0 0 20px;
+    position: relative;
+}
+
+.you_show .list_show .ad_show .thumb img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.you_show .list_show .ad_show .thumb > .icon
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 69px;
+    height: 57px;
+    margin: auto;
+
+    fill: #605f79;
+}
+
+.you_show .list_show .ad_show .thumb > * ~ .icon
+{
+    display: none;
+}
+
+
+.you_show .list_show .ad_show .info
+{
+    width: 70%;
+    padding: 14px;
+}
+
+
+.you_show .list_show .ad_show .name
+{
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+
+    position: relative;
+
+    cursor: pointer;
+}
+
+.you_show .list_show .ad_show .price
+{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 16px;
+
+    display: inline-block;
+
+    margin-top: 9px;
+
+    vertical-align: top;
+
+    background: linear-gradient(198.85deg, #fad961 -34.64%, #f76b1c 87.28%);
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+
+.you_show .list_show .ad_show .location
+{
+    color: #a5a5a5;
+    font-weight: 600;
+    line-height: 15px;
+    font-size:12px;
+
+    margin-top: 5px;
+}
+
+
+.not_acount{
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #DBDBDB;
+    width: 100%;
+    text-align: center;
+    color:#4C4C4C;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.not_acount a{
+    color:#F77F29;
+    text-decoration: none;
+}
+
+.change_phone .current_number_text{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #B2B2B2;
+}
+
+.change_phone .current_number{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 31px;
+
+    color: #000000;
+    margin-top:10px;
+
+}
+
+.step_1 button{
+    color: #fff;
+    font: 700 16px/19px var(--font_family);
+    display: inline-block;
+    cursor: pointer;
+    transition: box-shadow .2s linear;
+    vertical-align: top;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 29.7488px;
+    background: linear-gradient( 198.85deg , #fad961 -34.64%, #f76b1c 87.28%);
+    box-shadow: 0 17px 31px rgb(231 95 39 / 41%);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 30px;
+    height: auto;
+    padding: 7px 30px;
+    letter-spacing: 1.9px;
+    margin-top:20px;
+}
+
+.change_phone .new_number_text{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.change_phone .block_form_number{
+    background: #FFFFFF;
+    border: 2px solid #DCDADA;
+    box-sizing: border-box;
+    border-radius: 14px;
+    display: flex;
+    margin-top:15px;
+}
+
+
+.change_phone .block_form_number input{
+    color: var(--text_color);
+    font: 16px var(--font_family);
+    height: 57px;
+    padding: 0 17px;
+    transition: .2s linear;
+    border: none;
+    background: none;
+    width:100%;
+}
+
+.change_phone .block_form_number button{
+    color: #fff;
+    font: 700 16px/19px var(--font_family);
+    display: inline-block;
+    cursor: pointer;
+    transition: box-shadow .2s linear;
+    vertical-align: top;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient( 198.85deg , #fad961 -34.64%, #f76b1c 87.28%);
+    box-shadow: 0 17px 31px rgb(231 95 39 / 41%);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 30px;
+    padding: 7px 30px;
+    letter-spacing: 1.9px;
+    margin: 3px;
+        white-space: nowrap;
+}
+
+.change_phone .send_number_text{
+font-weight: bold;
+font-size: 16px;
+line-height: 19px;
+
+color: #9A9A9A;
+}
+.change_phone .send_number{
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+
+color: #000000;
+margin-top:20px;
+}
+.change_phone .block_form_send_number {
+    background: #FFFFFF;
+    border: 2px solid #DCDADA;
+    box-sizing: border-box;
+    border-radius: 14px;
+    display: flex;
+    margin-top:15px;
+        max-width: 400px;
+}
+
+.change_phone .block_form_send_number input{
+    color: var(--text_color);
+    font: 16px var(--font_family);
+    height: 57px;
+    padding: 0 17px;
+    transition: .2s linear;
+    border: none;
+    background: none;
+    width:100%;
+}
+
+.change_phone .block_form_send_number button{
+    color: #fff;
+    font: 700 16px/19px var(--font_family);
+    display: inline-block;
+    cursor: pointer;
+    transition: box-shadow .2s linear;
+    vertical-align: top;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient( 198.85deg , #fad961 -34.64%, #f76b1c 87.28%);
+    box-shadow: 0 17px 31px rgb(231 95 39 / 41%);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 30px;
+    padding: 7px 30px;
+    letter-spacing: 1.9px;
+    margin: 3px;
+    white-space: nowrap;
+}
+
+.step_2, .step_3{
+    display: none;
+}
+
+.change_phone{
+    margin-bottom:30px;
 }

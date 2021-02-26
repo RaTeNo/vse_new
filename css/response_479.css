@@ -872,4 +872,12 @@
         height: 480px;
         padding-bottom: 0;
     }
+
+    .change_phone .block_form_number button{
+        width:100%;
+    }
+
+    .change_phone .block_form_number{
+        flex-wrap: wrap;
+    }
 }
