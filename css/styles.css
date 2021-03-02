@@ -11921,3 +11921,32 @@ margin-top:20px;
 .change_phone{
     margin-bottom:30px;
 }
+
+.ads_category .desc{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #B2B2B2;
+
+}
+
+.ads_category .desc button{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    width: auto;
+    height: 41px;
+    margin: auto;
+    transition: box-shadow .2s linear;
+    letter-spacing: 1.9px;
+    border-radius: 24px;
+    background: linear-gradient(198.85deg, #fad961 -34.64%, #f76b1c 87.28%);
+    box-shadow: 0 17px 31px rgb(231 95 39 / 10%);
+    display: inline-block;
+    padding: 0 15px;
+    margin-top: 20px;
+}
+
+aside .categories .sub_cats > * > a.active.black{
+    color:black;
+}
