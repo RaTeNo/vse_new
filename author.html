@@ -51,10 +51,10 @@
 					<div class="mob_scroll">
 						<div class="cont row">
 							<div class="logo">
-								<a href="/">
-									<div class="name">ВСЕ.РФ</div>
-									<div class="desc">БИРЖА УСЛУГ</div>
+								<a href="/">									
 									<img data-src="images/logo.svg" alt="" class="lozad">
+									<div class="name">ВСЕ.РФ</div>
+									<div class="desc">БИРЖА ОБЪЯВЛЕНИЙ</div>
 								</a>
 							</div>
 
@@ -802,10 +802,10 @@
 			<footer>
 				<div class="cont row">
 					<div class="logo">
-						<div>
-							<div class="name">ВСЕ.РФ</div>
-							<div class="desc">БИРЖА УСЛУГ</div>
+						<div>							
 							<img data-src="images/logo.svg" alt="" class="lozad">
+							<div class="name">ВСЕ.РФ</div>
+							<div class="desc">БИРЖА ОБЪЯВЛЕНИЙ</div>
 						</div>
 					</div>
 
@@ -1096,6 +1096,19 @@
 		</section>
 
 
+		<div class="mini_modal modal" id="mini_modal">
+			<div class="question">Ваш город: <b>Волжский?</b></div>
+
+			<button class="btn yes close">ДА</button>
+
+			<button class="btn no modal_link" data-content="#city_modal">
+				<span>ИЗМЕНИТЬ</span>
+			</button>
+		</div>
+
+
+
+
 		<!-- Подключение javascript файлов -->
 		<script src="js/jquery-3.5.0.min.js"></script>
 		<script src="js/lozad.min.js"></script>
@@ -1107,5 +1120,15 @@
 		<script src="js/countdown.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>
+
+		<script>
+			if ($(window).width() < 768){
+				$.fancybox.open({
+					src: "#mini_modal",
+					type: 'inline',
+					touch: false
+				})
+			}
+		</script>
 	</body>
 </html>

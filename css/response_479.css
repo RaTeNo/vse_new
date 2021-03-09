@@ -617,6 +617,7 @@
     .ads_category .add_ad_link
     {
         padding: 25px 20px;
+        min-height: auto;
     }
 
 

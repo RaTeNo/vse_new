@@ -183,6 +183,7 @@
         left: 0;
 
         margin-top: 15px;
+        display: none;
     }
 
 
@@ -1195,4 +1196,77 @@
         width: 100%;
         margin-top: 16px;
     }
+
+    .mini_modal.modal{
+        width: 194px;
+        padding: 19px 14px;
+        border-radius: 13px;
+        background: #fff;
+        box-shadow: 0 10px 9px rgb(188 188 188 / 24%);
+    }
+
+    .mini_modal.modal .question {
+        color: #545454;
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 14px;
+        text-align: center;
+    }
+
+    .mini_modal.modal .btn {
+        color: #fff;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 30px;
+        display: inline-block;
+        width: 100%;
+        padding: 4px 30px;
+        transition: box-shadow .2s linear;
+        text-align: center;
+        vertical-align: top;
+        letter-spacing: 1.9px;
+        text-transform: uppercase;
+        border-radius: 30px;
+        background: linear-gradient(    198.85deg    , #fad961 -34.64%, #f76b1c 87.28%);
+        box-shadow: 0 17px 31px rgb(231 95 39 / 41%);
+    }
+
+    .mini_modal.modal .btn.no {
+        color: #f66b1c;
+        padding: 2px;
+    }
+
+    .mini_modal.modal .btn + .btn {
+        margin-top: 16px;
+    }
+    .mini_modal.modal .btn {
+        color: #fff;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 30px;
+        display: inline-block;
+        width: 100%;
+        padding: 4px 30px;
+        transition: box-shadow .2s linear;
+        text-align: center;
+        vertical-align: top;
+        letter-spacing: 1.9px;
+        text-transform: uppercase;
+        border-radius: 30px;
+        background: linear-gradient(    198.85deg    , #fad961 -34.64%, #f76b1c 87.28%);
+        box-shadow: 0 17px 31px rgb(231 95 39 / 41%);
+    }
+
+    .mini_modal.modal .btn.no span {
+        display: block;
+        padding: 2px 28px;
+        border-radius: inherit;
+        background: #fff;
+    }
+
+    .mini_modal.modal .fancybox-close-small{
+        top: -35px;
+        right: -35px;
+    }
+
 }

@@ -301,8 +301,15 @@ $(() => {
 							i++
 
 							if (!is_touch_device()) {
-								$('.swiper-pagination-bullet').on('mouseover', function () {
-									swiperSliders[parseInt($(this).data('slider'))].slideTo($(this).index() + 1)
+								$('.swiper-pagination-bullet').on('mouseover', function () {									
+									if($('.ads_category .ad .swiper-container').length > 1)
+									{
+										swiperSliders[parseInt($(this).data('slider'))].slideTo($(this).index() + 1)
+									}
+									else
+									{
+										swiperSliders.slideTo($(this).index() + 1)
+									}
 								})
 							}
 						})
