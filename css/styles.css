@@ -2566,11 +2566,8 @@ aside .hide_ad_btn:hover
 
 .block_head .clear_btn
 {
-    position: absolute;
-    top: 8px;
-    right: 0;
 
-    display: block;
+    display: inline-block;
 }
 
 .block_head .clear_btn .icon
@@ -10505,8 +10502,13 @@ footer .links a:hover
     padding: 7px 30px;
 
     letter-spacing: 1.9px;
+
 }
 
+#add_review_modal .form .submit_btn:disabled{
+    background: #8b8b8b;
+    box-shadow: none;
+}
 
 
 #add_review_phone_modal
@@ -11965,4 +11967,258 @@ aside .categories .sub_cats > * > a.active.black{
     font-size: 15px;
     font-weight: 500;
     line-height: 18px;
+}
+
+
+
+#edit_review_modal
+{
+    padding: 53px 29px 27px;
+}
+
+#edit_review_modal ~ .fancybox-close-small
+{
+    top: 4px;
+    right: 4px;
+}
+
+
+#edit_review_modal .author
+{
+    display: flex;
+
+    padding: 18px;
+
+    border: 1px solid #e3e3e3;
+    border-radius: 18px;
+
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+#edit_review_modal .author .photo
+{
+    position: relative;
+
+    overflow: hidden;
+
+    width: 72px;
+    height: 72px;
+
+    border-radius: 14px;
+    background: #e3e3e3;
+}
+
+#edit_review_modal .author .photo.empty
+{
+    background: #191837;
+}
+
+#edit_review_modal .author .photo .icon
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 32px;
+    height: 32px;
+    margin: auto;
+
+    fill: #605f79;
+}
+
+#edit_review_modal .author .photo img
+{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: inherit;
+
+    object-fit: cover;
+}
+
+
+#edit_review_modal .author .photo + *
+{
+    width: calc(100% - 87px);
+
+    align-self: center;
+}
+
+
+#edit_review_modal .author .name
+{
+    color: #000;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 22px;
+}
+
+
+#edit_review_modal .author .rating
+{
+    color: #000;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 24px;
+
+    display: flex;
+
+    margin-top: 6px;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+#edit_review_modal .author .rating .stars
+{
+    display: flex;
+
+    margin-left: 6px;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+#edit_review_modal .author .rating .stars > * + *
+{
+    margin-left: 6px;
+}
+
+#edit_review_modal .author .rating .stars img
+{
+    display: block;
+
+    width: 12px;
+}
+
+
+#edit_review_modal .form .hide
+{
+    display: none;
+}
+
+#edit_review_modal .form .label
+{
+    color: #000;
+
+    letter-spacing: 0;
+}
+
+#edit_review_modal .form .input
+{
+    box-shadow: none;
+}
+
+#edit_review_modal .form textarea
+{
+    height: 146px;
+
+    box-shadow: none;
+}
+
+
+#edit_review_modal .form .rate
+{
+    padding: 10px 0;
+}
+
+#edit_review_modal .form .rate .field
+{
+    display: flex;
+    flex-direction: row-reverse;
+
+    justify-content: center;
+}
+
+#edit_review_modal .form .rate .field > input
+{
+    display: none;
+}
+
+#edit_review_modal .form .rate .field > label
+{
+    display: block;
+
+    width: 44px;
+    height: 42px;
+    margin-top: auto;
+    padding: 0;
+
+    cursor: pointer;
+    transition: .3s;
+
+    background-image: url('../images/ic_star2.svg');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 95% 95%;
+}
+
+#edit_review_modal .form .rate .field > label ~ label
+{
+    margin-right: 4px;
+}
+
+#edit_review_modal .form .rate .field > label:before,
+#edit_review_modal .form .rate .field > label:after
+{
+    display: none !important;
+}
+
+#edit_review_modal .form .rate .field > input:checked ~ label,
+#edit_review_modal .form .rate .field > input:checked ~ label ~ label
+{
+    background-image: url('../images/ic_star2_a.svg');
+}
+
+
+#edit_review_modal .form .rate .field > input:not(:checked) ~ label:hover,
+#edit_review_modal .form .rate .field > input:not(:checked) ~ label:hover ~ label
+{
+    background-image: url('../images/ic_star2_a.svg');
+}
+
+#edit_review_modal .form .submit
+{
+    justify-content: flex-end;
+}
+
+#edit_review_modal .form .submit_btn
+{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 30px;
+
+    height: auto;
+    padding: 7px 30px;
+
+    letter-spacing: 1.9px;
+
+}
+
+#edit_review_modal .form .submit_btn:disabled{
+    background: #8b8b8b;
+    box-shadow: none;
+}
+
+.hide_desctop{
+    display: none;
 }

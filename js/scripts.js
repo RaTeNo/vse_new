@@ -322,7 +322,7 @@ $(() => {
 	// Добавление нового отзыва
 	$('#add_review_modal .form .rate .field > label').click(function () {
 		$('#add_review_modal .form .hide').fadeIn(300)
-		$('#add_review_modal .form .submit_btn').prop('disabled', false)
+		//$('#add_review_modal .form .submit_btn').prop('disabled', false)
 	})
 
 	$('#add_review_modal .form').submit(function (e) {
@@ -449,6 +449,14 @@ $(() => {
 
 		setTimeout(() => {
 			_self.closest('.line').find('.limit .current').text(_self.val().length)
+			if(_self.val().length > 50)
+			{
+				$("#add_review_modal .submit_btn").prop("disabled", false);
+			}
+			else
+			{
+				$("#add_review_modal .submit_btn").prop("disabled", true);
+			}
 		})
 	})
 })

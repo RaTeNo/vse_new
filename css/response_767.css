@@ -1267,6 +1267,9 @@
     .mini_modal.modal .fancybox-close-small{
         top: -35px;
         right: -35px;
+        display: none;
     }
+
+
 
 }

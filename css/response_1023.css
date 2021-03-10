@@ -725,4 +725,12 @@
         margin-left:0px;
         margin-top:15px;
     }
+
+    .hide_desctop{
+        display: block;
+    }
+
+    aside:not(.hide_desctop) .your_page, aside:not(.hide_desctop) .rating, aside:not(.hide_desctop) .reviews{
+        display: none;
+    }
 }
