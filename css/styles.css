@@ -1291,8 +1291,7 @@ header .mob_menu a.active
 
     display: inline-block;
 
-    padding-top: 9px;
-    padding-right: 37px;
+        padding-left: 52px;
 
     vertical-align: top;
     text-decoration: none;
@@ -1317,20 +1316,19 @@ header .mob_menu a.active
 {
     color: #fff;
     font-family: var(--font_family2);
-    font-size: 12px;
+    font-size: 8px;
     font-style: italic;
-    line-height: 14px;
+    line-height: 15px;
+    letter-spacing: 0.68px;
 
-    letter-spacing: 1px;
     text-transform: uppercase;
 }
 
 .mob_header .logo img
 {
     position: absolute;
-    top: 0;
-    right: 0;
-
+    top: 3px;
+    left: 0;
     display: block;
 }
 
