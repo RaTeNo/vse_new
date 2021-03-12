@@ -12221,6 +12221,7 @@ aside .categories .sub_cats > * > a.active.black{
     box-shadow: none;
 }
 
-.hide_desctop{
+.hide_desctop, .page_head .city{
     display: none;
 }
+

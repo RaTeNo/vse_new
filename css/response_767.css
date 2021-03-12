@@ -1276,6 +1276,7 @@
         width: 100%;
         margin-bottom: 15px;
         margin-top: -12px;
+        display: block;
     }
 
     .page_head .city button{
