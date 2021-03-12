@@ -520,10 +520,10 @@ $('#images_drop_zone').on('drag dragstart dragend dragover dragenter dragleave d
 	e.preventDefault()
 	e.stopPropagation()
 })
-	.on('drop', function (e) {
+	/*.on('drop', function (e) {
 		imagesDroppedFiles = e.originalEvent.dataTransfer.files
 		imagesShowFiles(imagesDroppedFiles)
-	})
+	})*/
 
 // Добавление/Редактирование - выбор файлов на устройстве
 $('.form .images.drop_files input[type=file]').change(function (e) {
@@ -581,10 +581,10 @@ $('#photos_drop_zone').on('drag dragstart dragend dragover dragenter dragleave d
 	e.preventDefault()
 	e.stopPropagation()
 })
-	.on('drop', function (e) {
+	/*.on('drop', function (e) {
 		photosDroppedFiles = e.originalEvent.dataTransfer.files
 		photosShowFiles(photosDroppedFiles)
-	})
+	})*/
 
 // Для организаций - Фотографии - выбор файлов на устройстве
 $('.form .photos.drop_files input[type=file]').change(function (e) {
@@ -638,10 +638,10 @@ $('#docs_drop_zone').on('drag dragstart dragend dragover dragenter dragleave dro
 	e.preventDefault()
 	e.stopPropagation()
 })
-	.on('drop', function (e) {
+	/*.on('drop', function (e) {
 		docsDroppedFiles = e.originalEvent.dataTransfer.files
 		docsShowFiles(docsDroppedFiles)
-	})
+	})*/
 
 // Для организаций - Документы - выбор файлов на устройстве
 $('.form .docs.drop_files input[type=file]').change(function (e) {

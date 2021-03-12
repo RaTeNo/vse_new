@@ -4988,7 +4988,9 @@ aside .hide_ad_btn:hover
     box-shadow: none;
 }
 
-
+.chat .add_message .form .bottom{
+	flex-wrap: nowrap;
+}
 
 /*-------------
     Profile
@@ -8022,6 +8024,7 @@ aside .hide_ad_btn:hover
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
+        width: calc(100% - 80px);
 }
 
 
@@ -8065,6 +8068,7 @@ aside .hide_ad_btn:hover
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
+        max-width: calc(100% - 70px);
 }
 
 

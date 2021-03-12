@@ -164,6 +164,7 @@
         padding: 0 20px;
 
         order: 3;
+        display: none;
     }
 
     header .city .btn
@@ -1270,6 +1271,48 @@
         display: none;
     }
 
+    .page_head .city{
+        text-align: right;
+        width: 100%;
+        margin-bottom: 15px;
+        margin-top: -12px;
+    }
+
+    .page_head .city button{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #8E8E8E;
+    }
+
+    .page_head .city button b{
+        background: #ECECEC;
+        border-radius: 13.5px;
+        padding: 6px 19px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        letter-spacing: 2.21667px;
+        color: #191837;
+        position: relative;
+        padding-right: 27px;
+    }
+
+    .page_head .city button b:after {
+        position: absolute;
+        top: -4px;
+        right: 10px;
+        bottom: 0;
+        display: block;
+        width: 8px;
+        height: 8px;
+        margin: auto;
+        content: '';
+        transform: rotate(-45deg);
+        border-bottom: 2px solid #191837;
+        border-left: 2px solid #191837;
+    }
 
 
 }
