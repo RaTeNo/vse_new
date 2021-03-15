@@ -4040,7 +4040,10 @@ aside .hide_ad_btn:hover
     background: linear-gradient(198.85deg, #fad961 -34.64%, #f76b1c 87.28%);
     box-shadow: 0 17px 31px rgba(231, 95, 39, .41);
 }
-
+.auth .data.register .next_step_btn:disabled{
+        background: #bdbdbd;
+        box-shadow:none;
+}
 .auth .data.register .next_step_btn:hover
 {
     box-shadow: 0 37px 29px rgba(231, 95, 39, .41);
@@ -12225,3 +12228,145 @@ aside .categories .sub_cats > * > a.active.black{
     display: none;
 }
 
+
+.auth .data.register .welcome .form{
+    margin-top:20px;
+}
+
+.auth .data.register .welcome .form input[type=checkbox] + label a{
+    display: contents;
+}
+
+.reviews .review.review_answer{
+    margin-top: 10px;
+    margin-left: 25px;
+    padding-left: 15px;
+    border-left: 2px solid #DDDDDD;
+}
+.reviews .review .button_answer{
+    margin-top:10px;
+}
+.reviews .review .button_answer a{
+    color: #f77f29;
+    line-height: 17px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+
+#add_answer_review_modal .review{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+#add_answer_review_modal .review .author {
+    display: flex;
+    margin-right: auto;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: calc(100% - 80px);
+}
+
+
+#add_answer_review_modal .review .text {
+    color: #252525;
+    line-height: 17px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+#add_answer_review_modal .review .author .photo {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+#add_answer_review_modal .review .author .photo.blue {
+    background: #0091ff;
+}
+
+
+#add_answer_review_modal .review .author .photo + * {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    max-width: calc(100% - 70px);
+}
+
+#add_answer_review_modal .review .author .name {
+    color: #000;
+    font-weight: bold;
+    line-height: 17px;
+    width: 100%;
+}
+
+
+
+#add_answer_review_modal .review .author .rating {
+    margin-top: 4px;
+}
+
+#add_answer_review_modal .review .author .rating .stars {
+    display: flex;
+    margin-left: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+#add_answer_review_modal .review .author .rating .stars img {
+    display: block;
+    width: 16px;
+}
+
+#add_answer_review_modal .review .author .rating .stars > * + * {
+    margin-left: 6px;
+}
+
+
+#add_answer_review_modal .form .label {
+    color: #000;
+    letter-spacing: 0;
+}
+
+
+#add_answer_review_modal .form .submit_btn:disabled {
+    background: #8b8b8b;
+    box-shadow: none;
+}
+#add_answer_review_modal .form .submit_btn {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 30px;
+    height: auto;
+    padding: 7px 30px;
+    letter-spacing: 1.9px;
+}
+
+#add_answer_review_modal .form .submit {
+    justify-content: flex-end;
+}
+#add_answer_review_modal .title{
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 30px;
+}

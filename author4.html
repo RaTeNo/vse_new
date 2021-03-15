@@ -698,7 +698,7 @@
 										<div class="desc">Вы сотрудничали с этим пользователем? Оставьте отзыв о его работе</div>
 									</div>
 
-									<button class="add_review_btn modal_link" data-content="#add_review_modal">НАПИСАТЬ ОТЗЫВ</button>
+									<button class="add_review_btn modal_link" data-content="#add_answer_review_modal">НАПИСАТЬ ОТЗЫВ</button>
 								</section>
 
 
@@ -742,6 +742,10 @@
 											<div class="text">
 												<p>Не рекомендую работать с этим человеком!!!</p>
 											</div>
+
+											<div class="button_answer">
+												<a href="" class="modal_link" data-content="#add_answer_review_modal">Ответить</a>
+											</div>
 										</div>
 
 
@@ -773,6 +777,27 @@
 
 											<div class="text">
 												<p>Не однократно заказываю уже уборку дома. Очень нравится как ребята работают. Очень рекомендую за качество выполненной работы 👍👍 Если уборка то только Сафари 👍👍 , спасибо за качество обслуживания.</p>
+											</div>
+										</div>
+
+										<div class="review review_answer">
+											<div class="author">
+												<div class="photo red">М</div>
+
+												<div>
+													<div class="name">Марина П.</div>													
+												</div>
+											</div>
+
+											<div class="date">09.01.2020</div>
+
+											<div class="text">
+												<p>Не однократно заказываю уже уборку дома. Очень нравится как ребята работают. Очень рекомендую за качество выполненной работы 👍👍 Если уборка то только Сафари 👍👍 , спасибо за качество обслуживания.</p>
+											</div>
+
+											<div class="button_answer">
+												<a href="">Удалить ответ</a>
+												<a href="">Редактировать</a>
 											</div>
 										</div>
 
@@ -1095,6 +1120,49 @@
 			</form>
 		</section>
 
+		<section class="modal" id="add_answer_review_modal">
+			<div class="title">Ответ на отзыв</div>
+			<form action="" class="form">
+				<div class="review">
+					<div class="author">
+						<div class="photo blue">М</div>
+
+						<div>
+							<div class="name">Марина П.</div>
+
+							<div class="rating">
+								<div class="stars">
+									<img src="images/ic_star_a.svg" alt="">
+									<img src="images/ic_star_a.svg" alt="">
+									<img src="images/ic_star_a.svg" alt="">
+									<img src="images/ic_star_a.svg" alt="">
+									<img src="images/ic_star.svg" alt="">
+								</div>
+							</div>							
+						</div>
+					</div>
+
+					<div class="text">
+						<p>Не однократно заказываю уже уборку дома. Очень нравится как ребята работают. Очень рекомендую за качество выполненной работы 👍👍 Если уборка то только Сафари 👍👍 , спасибо за качество обслуживания.</p>
+					</div>
+				</div>
+
+					<div class="line">
+						<div class="label">Ваш ответ</div>
+						<div class="field">
+							<textarea name="" minlength="50" placeholder="Ваш отзыв… (Минимум 50 символов)" class="with_limit2"></textarea>
+						</div>
+
+						<div class="limit">Введено символов: <span class="current">0</span>, минимум 50</div>
+					</div>			
+
+
+				<div class="submit">
+					<button type="submit" class="submit_btn" disabled>ОТПРАВИТЬ</button>
+				</div>
+			</form>
+		</section>
+
 
 		<section class="modal" id="add_review_phone_modal">
 			<div class="step step1">
@@ -1149,6 +1217,7 @@
 				</div>
 			</div>
 		</section>
+
 
 
 		<section class="modal" id="report_modal">

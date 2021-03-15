@@ -94,15 +94,28 @@ $(() => {
 
 	// Регистрация - Смена шага
 	var currentStep = 1
+	$("input[name='agree']").change(function (e) {
+		if($("input[name='agree']").is(':checked')){
+			$('.auth .data.register .next_step_btn').prop("disabled", false)
+		}		
+		else
+		{
+			$('.auth .data.register .next_step_btn').prop("disabled", true)
+		}
+	});
+	
 
 	$('.auth .data.register .next_step_btn').click(function (e) {
 		e.preventDefault()
+		if($("input[name='agree']").is(':checked'))
+		{
+			currentStep++
+			$('.auth .head .steps .current').text(currentStep)
 
-		currentStep++
-		$('.auth .head .steps .current').text(currentStep)
-
-		$(this).closest('.data').hide()
-		$('.auth .data.register.step' + currentStep).fadeIn(300)
+			$(this).closest('.data').hide()
+			$('.auth .data.register.step' + currentStep).fadeIn(300)
+		}			
+		
 	})
 
 
@@ -456,6 +469,22 @@ $(() => {
 			else
 			{
 				$("#add_review_modal .submit_btn").prop("disabled", true);
+			}
+		})
+	})
+
+	$('body').on('keydown', '.form .with_limit2', function () {
+		let _self = $(this)
+
+		setTimeout(() => {
+			_self.closest('.line').find('.limit .current').text(_self.val().length)
+			if(_self.val().length > 50)
+			{
+				$("#add_answer_review_modal .submit_btn").prop("disabled", false);
+			}
+			else
+			{
+				$("#add_answer_review_modal .submit_btn").prop("disabled", true);
 			}
 		})
 	})
