@@ -417,7 +417,7 @@ $(() => {
 				+ '<button type="button" class="remove_btn" data-index="' + i + '">удалить</button>'
 				+ '</div>'
 
-			$('.form .attachment .files').append(html)
+			$('.form .attachment .files').html(html)
 		})
 	})
 
@@ -428,7 +428,7 @@ $(() => {
 
 
 	// Уведомления
-	$('.notifications .notification .close').click(function (e) {
+	$('body').on('click', '.notifications .notification .close', function (e) {
 		e.preventDefault()
 
 		$(this).closest('.notification').remove()
