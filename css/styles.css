@@ -422,7 +422,7 @@ button
 .notifications
 {
     position: fixed;
-    z-index: 999;
+    z-index: 999999;
     top: 26px;
     right: 20px;
 
@@ -4992,7 +4992,7 @@ aside .hide_ad_btn:hover
 }
 
 .chat .add_message .form .bottom{
-	flex-wrap: nowrap;
+	/*flex-wrap: nowrap;*/
 }
 
 /*-------------
