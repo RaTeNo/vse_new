@@ -1,5 +1,11 @@
 $(() => {
 
+
+	$(".phone_number, .phone_code").bind("keypress", function(e) {
+        if (e.keyCode == 13) {
+           return false;
+        }
+     });
 	$('header .city .mini_modal .btn.yes').click(function (e) {
 		e.preventDefault()
 
