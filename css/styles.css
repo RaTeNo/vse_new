@@ -12370,3 +12370,184 @@ aside .categories .sub_cats > * > a.active.black{
     line-height: 29px;
     margin-bottom: 30px;
 }
+
+
+
+
+
+/*------------------
+    Cookie agree
+------------------*/
+.cookie_agree
+{
+    position: fixed;
+    z-index: 50;
+    right: 0;
+    bottom: 45px;
+    left: 0;
+
+    display: block;
+
+    width: 1383px;
+    max-width: calc(100% - 36px);
+    margin: auto;
+    padding: 28px 28px 30px;
+
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 14px 43px rgba(110, 110, 110, .585337);
+}
+
+.cookie_agree > .close
+{
+    position: absolute;
+    top: 9px;
+    right: 9px;
+
+    width: 42px;
+    height: 42px;
+}
+
+.cookie_agree > .close:before,
+.cookie_agree > .close:after
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 27px;
+    height: 3px;
+    margin: auto;
+
+    content: '';
+    transform: rotate(45deg);
+
+    border-radius: 3px;
+    background: #aeaeae;
+}
+
+.cookie_agree > .close:after
+{
+    transform: rotate(-45deg);
+}
+
+.cookie_agree .title
+{
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 25px;
+
+    letter-spacing: -.55px;
+}
+
+.cookie_agree .desc
+{
+    color: #484848;
+    font-size: 17px;
+    line-height: 27px;
+
+    margin-top: 7px;
+}
+
+.cookie_agree .btns
+{
+    display: flex;
+
+    margin-top: 21px;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.cookie_agree .agree
+{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    display: inline-block;
+    padding: 14px 30px;
+    transition: box-shadow .2s linear;
+    vertical-align: top;
+    letter-spacing: 1.9px;
+    border-radius: 24px;
+    background: linear-gradient(198.85deg, #fad961 -34.64%, #f76b1c 87.28%);
+    box-shadow: 0 14px 25px rgb(231 95 39 / 41%);
+    text-transform: uppercase;
+}
+
+.cookie_agree .read_more
+{  
+
+    margin-left: 10px;
+    transition: color .2s linear;
+    vertical-align: top;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 30px;
+    display: inline-block;
+    padding: 4px 30px;
+    text-align: center;
+    vertical-align: top;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    color: #f66b1c;
+    padding: 2px;
+    border: 2px solid #F76B1C;
+    padding: 5px 15px;
+
+
+}
+
+.cookie_agree .read_more:hover
+{
+    color: #000;
+}
+
+
+.menu_absolute{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 28px rgb(20 20 20 / 50%);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 66px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;  
+    z-index: 49;
+    display: none;
+}
+.menu_absolute a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+
+    color: #A5A5A5;
+    text-decoration: none;
+}
+
+.menu_absolute a span{
+    margin-top:8px;
+}
+
+.menu_absolute a.active{
+    color:#F76E1E;
+    font-weight: 600;
+}
+
+.menu_absolute a.active svg > *{
+    fill:#F76E1E;
+}

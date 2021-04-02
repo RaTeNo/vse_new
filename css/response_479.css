@@ -889,4 +889,41 @@
     .reviews .review .hide_show_btn{
     	margin-left:0px;
     }
+
+
+    /*------------------
+        Cookie agree
+    ------------------*/
+    .cookie_agree
+    {
+        bottom: 12px;
+
+        max-width: calc(100% - 24px);
+        padding: 20px;
+    }
+
+    .cookie_agree .title
+    {
+        font-size: 17px;
+        line-height: 19px;
+    }
+
+    .cookie_agree .desc
+    {
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+    .cookie_agree .read_more{
+            padding: 5px 10px;
+    }
+
+    .cookie_agree .agree{
+        padding: 14px 15px;
+    }
+
+    .menu_absolute{
+        display: flex;
+    }
+
 }

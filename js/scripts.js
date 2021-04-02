@@ -1,5 +1,20 @@
 $(() => {
 
+	// Cookie
+	$('.cookie_agree .close').click(function (e) {
+		e.preventDefault()
+
+		$('.cookie_agree').fadeOut(200)
+
+		if ($(this).hasClass('agree')) {
+			localStorage.setItem('cookie_agree', 1)
+		}
+	})
+
+	if (!localStorage.getItem('cookie_agree')) {
+		$('.cookie_agree').fadeIn(300)
+	}
+
 
 	$(".phone_number, .phone_code").bind("keypress", function(e) {
         if (e.keyCode == 13) {
