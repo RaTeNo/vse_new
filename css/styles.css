@@ -12381,15 +12381,15 @@ aside .categories .sub_cats > * > a.active.black{
 .cookie_agree
 {
     position: fixed;
-    z-index: 50;
+    z-index: 100;
     right: 0;
     bottom: 45px;
     left: 0;
 
-    display: block;
+      display: none;
 
-    width: 1383px;
-    max-width: calc(100% - 36px);
+    width: 100%;
+    max-width: 1120px;
     margin: auto;
     padding: 28px 28px 30px;
 

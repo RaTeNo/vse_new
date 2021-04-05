@@ -10,7 +10,7 @@ $(() => {
 			localStorage.setItem('cookie_agree', 1)
 		}
 	})
-
+	
 	if (!localStorage.getItem('cookie_agree')) {
 		$('.cookie_agree').fadeIn(300)
 	}
