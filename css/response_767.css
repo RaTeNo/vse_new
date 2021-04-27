@@ -1315,5 +1315,33 @@
         border-left: 2px solid #191837;
     }
 
+    .warning_not_active.desktop{
+        display: none;
+    }
+
+    .warning_not_active.mobile{
+        display: flex;
+        font-size: 11px;
+        padding: 10px 0;
+    }
+
+    .warning_not_active span{
+        font-size: 12px;
+        margin-bottom:0px;
+    }
+
+    .text_overflow{
+        max-width: 100%;
+    }
+
+    .warning_not_active a{
+        padding: 7px 7px;
+        letter-spacing: 0;
+    }
+
+    .no_active_text{
+        margin-top: 10px;
+    }
+
 
 }

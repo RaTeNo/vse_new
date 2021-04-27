@@ -733,4 +733,14 @@
     aside:not(.hide_desctop) .your_page, aside:not(.hide_desctop) .rating, aside:not(.hide_desctop) .reviews{
         display: none;
     }
+
+    .warning_not_active{
+        margin-top:-40px;
+        margin-bottom: 40px;
+    }
+
+
+    .text_overflow{
+        max-width: calc(100% - 200px);
+    }
 }
